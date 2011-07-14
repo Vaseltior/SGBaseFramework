@@ -42,8 +42,3 @@ static inline void sgReleaseCFSafely(NSObject **object) {
     }
 }
 
-// Shorthand for getting localized strings, used in formats below for readability
-static inline NSString *sgLocStr(NSString *key) {
-    return [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil];
-}
-

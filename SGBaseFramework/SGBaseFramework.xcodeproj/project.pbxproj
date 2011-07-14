@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		AA96A8EF13CF5FA4007EC384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8EE13CF5FA4007EC384 /* Foundation.framework */; };
 		AA96A8FA13CF5FA5007EC384 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8F913CF5FA5007EC384 /* SenTestingKit.framework */; };
-		AA96A8FC13CF5FA5007EC384 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8FB13CF5FA5007EC384 /* UIKit.framework */; };
 		AA96A8FD13CF5FA5007EC384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8EE13CF5FA4007EC384 /* Foundation.framework */; };
-		AA96A8FF13CF5FA5007EC384 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8FE13CF5FA5007EC384 /* CoreGraphics.framework */; };
 		AA96A90213CF5FA5007EC384 /* libSGBaseFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8EB13CF5FA4007EC384 /* libSGBaseFramework.a */; };
 		AA96A90813CF5FA5007EC384 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA96A90613CF5FA5007EC384 /* InfoPlist.strings */; };
 		AA96A90A13CF5FA5007EC384 /* SGBaseFrameworkTests.h in Resources */ = {isa = PBXBuildFile; fileRef = AA96A90913CF5FA5007EC384 /* SGBaseFrameworkTests.h */; };
@@ -27,6 +25,15 @@
 		AA96A93313CF65BB007EC384 /* SGSafeRelease.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A93113CF65BB007EC384 /* SGSafeRelease.h */; };
 		AA96A93413CF65BB007EC384 /* SGSafeRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93213CF65BB007EC384 /* SGSafeRelease.m */; };
 		AA96A93513CF65BB007EC384 /* SGSafeRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93213CF65BB007EC384 /* SGSafeRelease.m */; };
+		AA96A94013CF6801007EC384 /* SharedCLController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A93E13CF6801007EC384 /* SharedCLController.h */; };
+		AA96A94113CF6801007EC384 /* SharedCLController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93F13CF6801007EC384 /* SharedCLController.m */; };
+		AA96A94213CF6801007EC384 /* SharedCLController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93F13CF6801007EC384 /* SharedCLController.m */; };
+		AA96A94413CF6811007EC384 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A94313CF6811007EC384 /* CoreLocation.framework */; };
+		AA96A94613CF6826007EC384 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A94513CF6826007EC384 /* CoreGraphics.framework */; };
+		AA96A94813CF6839007EC384 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A94713CF6839007EC384 /* UIKit.framework */; };
+		AA96A94C13CF812F007EC384 /* NSObject+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A94A13CF812F007EC384 /* NSObject+Extensions.h */; };
+		AA96A94D13CF812F007EC384 /* NSObject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A94B13CF812F007EC384 /* NSObject+Extensions.m */; };
+		AA96A94E13CF812F007EC384 /* NSObject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A94B13CF812F007EC384 /* NSObject+Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +52,6 @@
 		AA96A8F213CF5FA4007EC384 /* SGBaseFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SGBaseFramework-Prefix.pch"; sourceTree = "<group>"; };
 		AA96A8F813CF5FA5007EC384 /* SGBaseFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGBaseFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA96A8F913CF5FA5007EC384 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		AA96A8FB13CF5FA5007EC384 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		AA96A8FE13CF5FA5007EC384 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		AA96A90513CF5FA5007EC384 /* SGBaseFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SGBaseFrameworkTests-Info.plist"; sourceTree = "<group>"; };
 		AA96A90713CF5FA5007EC384 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA96A90913CF5FA5007EC384 /* SGBaseFrameworkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGBaseFrameworkTests.h; sourceTree = "<group>"; };
@@ -60,6 +65,13 @@
 		AA96A92213CF626E007EC384 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
 		AA96A93113CF65BB007EC384 /* SGSafeRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSafeRelease.h; sourceTree = "<group>"; };
 		AA96A93213CF65BB007EC384 /* SGSafeRelease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSafeRelease.m; sourceTree = "<group>"; };
+		AA96A93E13CF6801007EC384 /* SharedCLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedCLController.h; sourceTree = "<group>"; };
+		AA96A93F13CF6801007EC384 /* SharedCLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedCLController.m; sourceTree = "<group>"; };
+		AA96A94313CF6811007EC384 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AA96A94513CF6826007EC384 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AA96A94713CF6839007EC384 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AA96A94A13CF812F007EC384 /* NSObject+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extensions.h"; sourceTree = "<group>"; };
+		AA96A94B13CF812F007EC384 /* NSObject+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA96A94813CF6839007EC384 /* UIKit.framework in Frameworks */,
+				AA96A94613CF6826007EC384 /* CoreGraphics.framework in Frameworks */,
+				AA96A94413CF6811007EC384 /* CoreLocation.framework in Frameworks */,
 				AA96A8EF13CF5FA4007EC384 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,9 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA96A8FA13CF5FA5007EC384 /* SenTestingKit.framework in Frameworks */,
-				AA96A8FC13CF5FA5007EC384 /* UIKit.framework in Frameworks */,
 				AA96A8FD13CF5FA5007EC384 /* Foundation.framework in Frameworks */,
-				AA96A8FF13CF5FA5007EC384 /* CoreGraphics.framework in Frameworks */,
 				AA96A90213CF5FA5007EC384 /* libSGBaseFramework.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,10 +121,11 @@
 		AA96A8ED13CF5FA4007EC384 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA96A94713CF6839007EC384 /* UIKit.framework */,
+				AA96A94513CF6826007EC384 /* CoreGraphics.framework */,
+				AA96A94313CF6811007EC384 /* CoreLocation.framework */,
 				AA96A8EE13CF5FA4007EC384 /* Foundation.framework */,
 				AA96A8F913CF5FA5007EC384 /* SenTestingKit.framework */,
-				AA96A8FB13CF5FA5007EC384 /* UIKit.framework */,
-				AA96A8FE13CF5FA5007EC384 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,6 +178,7 @@
 		AA96A91A13CF626E007EC384 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AA96A93C13CF674F007EC384 /* Geolocalization */,
 				AA96A93613CF65C4007EC384 /* Common */,
 			);
 			path = Classes;
@@ -186,6 +201,7 @@
 		AA96A93613CF65C4007EC384 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AA96A94913CF8114007EC384 /* Additions */,
 				AA96A93813CF65E1007EC384 /* Memory */,
 			);
 			name = Common;
@@ -209,6 +225,24 @@
 			name = Memory;
 			sourceTree = "<group>";
 		};
+		AA96A93C13CF674F007EC384 /* Geolocalization */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A93E13CF6801007EC384 /* SharedCLController.h */,
+				AA96A93F13CF6801007EC384 /* SharedCLController.m */,
+			);
+			name = Geolocalization;
+			sourceTree = "<group>";
+		};
+		AA96A94913CF8114007EC384 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A94A13CF812F007EC384 /* NSObject+Extensions.h */,
+				AA96A94B13CF812F007EC384 /* NSObject+Extensions.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -221,6 +255,8 @@
 				AA96A92913CF626E007EC384 /* GTMObjectSingleton.h in Headers */,
 				AA96A92A13CF626E007EC384 /* GTMSenTestCase.h in Headers */,
 				AA96A93313CF65BB007EC384 /* SGSafeRelease.h in Headers */,
+				AA96A94013CF6801007EC384 /* SharedCLController.h in Headers */,
+				AA96A94C13CF812F007EC384 /* NSObject+Extensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +360,8 @@
 			files = (
 				AA96A92B13CF626E007EC384 /* GTMSenTestCase.m in Sources */,
 				AA96A93413CF65BB007EC384 /* SGSafeRelease.m in Sources */,
+				AA96A94113CF6801007EC384 /* SharedCLController.m in Sources */,
+				AA96A94D13CF812F007EC384 /* NSObject+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +374,8 @@
 				AA96A92813CF626E007EC384 /* GTMIPhoneUnitTestMain.m in Sources */,
 				AA96A92C13CF626E007EC384 /* GTMSenTestCase.m in Sources */,
 				AA96A93513CF65BB007EC384 /* SGSafeRelease.m in Sources */,
+				AA96A94213CF6801007EC384 /* SharedCLController.m in Sources */,
+				AA96A94E13CF812F007EC384 /* NSObject+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +417,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -394,7 +434,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -422,7 +462,7 @@
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
 				GCC_WARN_PEDANTIC = YES;
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
@@ -455,7 +495,7 @@
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = NO;
 				GCC_WARN_PEDANTIC = YES;
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
