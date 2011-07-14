@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA96A8EF13CF5FA4007EC384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8EE13CF5FA4007EC384 /* Foundation.framework */; };
+		AA96A8FA13CF5FA5007EC384 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8F913CF5FA5007EC384 /* SenTestingKit.framework */; };
+		AA96A8FC13CF5FA5007EC384 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8FB13CF5FA5007EC384 /* UIKit.framework */; };
+		AA96A8FD13CF5FA5007EC384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8EE13CF5FA4007EC384 /* Foundation.framework */; };
+		AA96A8FF13CF5FA5007EC384 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8FE13CF5FA5007EC384 /* CoreGraphics.framework */; };
+		AA96A90213CF5FA5007EC384 /* libSGBaseFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8EB13CF5FA4007EC384 /* libSGBaseFramework.a */; };
+		AA96A90813CF5FA5007EC384 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA96A90613CF5FA5007EC384 /* InfoPlist.strings */; };
+		AA96A90A13CF5FA5007EC384 /* SGBaseFrameworkTests.h in Resources */ = {isa = PBXBuildFile; fileRef = AA96A90913CF5FA5007EC384 /* SGBaseFrameworkTests.h */; };
+		AA96A90C13CF5FA5007EC384 /* SGBaseFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A90B13CF5FA5007EC384 /* SGBaseFrameworkTests.m */; };
+		AA96A92313CF626E007EC384 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A91C13CF626E007EC384 /* GTMDefines.h */; };
+		AA96A92413CF626E007EC384 /* GTMIPhoneUnitTestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A91D13CF626E007EC384 /* GTMIPhoneUnitTestDelegate.h */; };
+		AA96A92613CF626E007EC384 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A91E13CF626E007EC384 /* GTMIPhoneUnitTestDelegate.m */; };
+		AA96A92813CF626E007EC384 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A91F13CF626E007EC384 /* GTMIPhoneUnitTestMain.m */; };
+		AA96A92913CF626E007EC384 /* GTMObjectSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A92013CF626E007EC384 /* GTMObjectSingleton.h */; };
+		AA96A92A13CF626E007EC384 /* GTMSenTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A92113CF626E007EC384 /* GTMSenTestCase.h */; };
+		AA96A92B13CF626E007EC384 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A92213CF626E007EC384 /* GTMSenTestCase.m */; };
+		AA96A92C13CF626E007EC384 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A92213CF626E007EC384 /* GTMSenTestCase.m */; };
+		AA96A93313CF65BB007EC384 /* SGSafeRelease.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A93113CF65BB007EC384 /* SGSafeRelease.h */; };
+		AA96A93413CF65BB007EC384 /* SGSafeRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93213CF65BB007EC384 /* SGSafeRelease.m */; };
+		AA96A93513CF65BB007EC384 /* SGSafeRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93213CF65BB007EC384 /* SGSafeRelease.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA96A90013CF5FA5007EC384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA96A8E213CF5FA4007EC384 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA96A8EA13CF5FA4007EC384;
+			remoteInfo = SGBaseFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA96A8EB13CF5FA4007EC384 /* libSGBaseFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSGBaseFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA96A8EE13CF5FA4007EC384 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA96A8F213CF5FA4007EC384 /* SGBaseFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SGBaseFramework-Prefix.pch"; sourceTree = "<group>"; };
+		AA96A8F813CF5FA5007EC384 /* SGBaseFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SGBaseFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA96A8F913CF5FA5007EC384 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		AA96A8FB13CF5FA5007EC384 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AA96A8FE13CF5FA5007EC384 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		AA96A90513CF5FA5007EC384 /* SGBaseFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SGBaseFrameworkTests-Info.plist"; sourceTree = "<group>"; };
+		AA96A90713CF5FA5007EC384 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA96A90913CF5FA5007EC384 /* SGBaseFrameworkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGBaseFrameworkTests.h; sourceTree = "<group>"; };
+		AA96A90B13CF5FA5007EC384 /* SGBaseFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGBaseFrameworkTests.m; sourceTree = "<group>"; };
+		AA96A91C13CF626E007EC384 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		AA96A91D13CF626E007EC384 /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = "<group>"; };
+		AA96A91E13CF626E007EC384 /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestDelegate.m; sourceTree = "<group>"; };
+		AA96A91F13CF626E007EC384 /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestMain.m; sourceTree = "<group>"; };
+		AA96A92013CF626E007EC384 /* GTMObjectSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMObjectSingleton.h; sourceTree = "<group>"; };
+		AA96A92113CF626E007EC384 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
+		AA96A92213CF626E007EC384 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
+		AA96A93113CF65BB007EC384 /* SGSafeRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSafeRelease.h; sourceTree = "<group>"; };
+		AA96A93213CF65BB007EC384 /* SGSafeRelease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSafeRelease.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA96A8E813CF5FA4007EC384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA96A8EF13CF5FA4007EC384 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA96A8F413CF5FA5007EC384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA96A8FA13CF5FA5007EC384 /* SenTestingKit.framework in Frameworks */,
+				AA96A8FC13CF5FA5007EC384 /* UIKit.framework in Frameworks */,
+				AA96A8FD13CF5FA5007EC384 /* Foundation.framework in Frameworks */,
+				AA96A8FF13CF5FA5007EC384 /* CoreGraphics.framework in Frameworks */,
+				AA96A90213CF5FA5007EC384 /* libSGBaseFramework.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA96A8E013CF5FA4007EC384 = {
+			isa = PBXGroup;
+			children = (
+				AA96A8F013CF5FA4007EC384 /* SGBaseFramework */,
+				AA96A90313CF5FA5007EC384 /* SGBaseFrameworkTests */,
+				AA96A8ED13CF5FA4007EC384 /* Frameworks */,
+				AA96A8EC13CF5FA4007EC384 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA96A8EC13CF5FA4007EC384 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A8EB13CF5FA4007EC384 /* libSGBaseFramework.a */,
+				AA96A8F813CF5FA5007EC384 /* SGBaseFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA96A8ED13CF5FA4007EC384 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A8EE13CF5FA4007EC384 /* Foundation.framework */,
+				AA96A8F913CF5FA5007EC384 /* SenTestingKit.framework */,
+				AA96A8FB13CF5FA5007EC384 /* UIKit.framework */,
+				AA96A8FE13CF5FA5007EC384 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA96A8F013CF5FA4007EC384 /* SGBaseFramework */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A93713CF65CF007EC384 /* Third Party */,
+				AA96A91A13CF626E007EC384 /* Classes */,
+				AA96A91813CF5FE5007EC384 /* Common */,
+				AA96A8F113CF5FA4007EC384 /* Supporting Files */,
+			);
+			path = SGBaseFramework;
+			sourceTree = "<group>";
+		};
+		AA96A8F113CF5FA4007EC384 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A8F213CF5FA4007EC384 /* SGBaseFramework-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA96A90313CF5FA5007EC384 /* SGBaseFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A90913CF5FA5007EC384 /* SGBaseFrameworkTests.h */,
+				AA96A90B13CF5FA5007EC384 /* SGBaseFrameworkTests.m */,
+				AA96A90413CF5FA5007EC384 /* Supporting Files */,
+			);
+			path = SGBaseFrameworkTests;
+			sourceTree = "<group>";
+		};
+		AA96A90413CF5FA5007EC384 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A90513CF5FA5007EC384 /* SGBaseFrameworkTests-Info.plist */,
+				AA96A90613CF5FA5007EC384 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA96A91813CF5FE5007EC384 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		AA96A91A13CF626E007EC384 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A93613CF65C4007EC384 /* Common */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AA96A91B13CF626E007EC384 /* GoogleToolkitForMac */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A91C13CF626E007EC384 /* GTMDefines.h */,
+				AA96A91D13CF626E007EC384 /* GTMIPhoneUnitTestDelegate.h */,
+				AA96A91E13CF626E007EC384 /* GTMIPhoneUnitTestDelegate.m */,
+				AA96A91F13CF626E007EC384 /* GTMIPhoneUnitTestMain.m */,
+				AA96A92013CF626E007EC384 /* GTMObjectSingleton.h */,
+				AA96A92113CF626E007EC384 /* GTMSenTestCase.h */,
+				AA96A92213CF626E007EC384 /* GTMSenTestCase.m */,
+			);
+			path = GoogleToolkitForMac;
+			sourceTree = "<group>";
+		};
+		AA96A93613CF65C4007EC384 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A93813CF65E1007EC384 /* Memory */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		AA96A93713CF65CF007EC384 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A91B13CF626E007EC384 /* GoogleToolkitForMac */,
+			);
+			name = "Third Party";
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AA96A93813CF65E1007EC384 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A93113CF65BB007EC384 /* SGSafeRelease.h */,
+				AA96A93213CF65BB007EC384 /* SGSafeRelease.m */,
+			);
+			name = Memory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AA96A8E913CF5FA4007EC384 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA96A92313CF626E007EC384 /* GTMDefines.h in Headers */,
+				AA96A92413CF626E007EC384 /* GTMIPhoneUnitTestDelegate.h in Headers */,
+				AA96A92913CF626E007EC384 /* GTMObjectSingleton.h in Headers */,
+				AA96A92A13CF626E007EC384 /* GTMSenTestCase.h in Headers */,
+				AA96A93313CF65BB007EC384 /* SGSafeRelease.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AA96A8EA13CF5FA4007EC384 /* SGBaseFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA96A90F13CF5FA5007EC384 /* Build configuration list for PBXNativeTarget "SGBaseFramework" */;
+			buildPhases = (
+				AA96A8E713CF5FA4007EC384 /* Sources */,
+				AA96A8E813CF5FA4007EC384 /* Frameworks */,
+				AA96A8E913CF5FA4007EC384 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SGBaseFramework;
+			productName = SGBaseFramework;
+			productReference = AA96A8EB13CF5FA4007EC384 /* libSGBaseFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AA96A8F713CF5FA5007EC384 /* SGBaseFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA96A91213CF5FA5007EC384 /* Build configuration list for PBXNativeTarget "SGBaseFrameworkTests" */;
+			buildPhases = (
+				AA96A8F313CF5FA5007EC384 /* Sources */,
+				AA96A8F413CF5FA5007EC384 /* Frameworks */,
+				AA96A8F513CF5FA5007EC384 /* Resources */,
+				AA96A8F613CF5FA5007EC384 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA96A90113CF5FA5007EC384 /* PBXTargetDependency */,
+			);
+			name = SGBaseFrameworkTests;
+			productName = SGBaseFrameworkTests;
+			productReference = AA96A8F813CF5FA5007EC384 /* SGBaseFrameworkTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA96A8E213CF5FA4007EC384 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = YouMag;
+			};
+			buildConfigurationList = AA96A8E513CF5FA4007EC384 /* Build configuration list for PBXProject "SGBaseFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA96A8E013CF5FA4007EC384;
+			productRefGroup = AA96A8EC13CF5FA4007EC384 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA96A8EA13CF5FA4007EC384 /* SGBaseFramework */,
+				AA96A8F713CF5FA5007EC384 /* SGBaseFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA96A8F513CF5FA5007EC384 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA96A90813CF5FA5007EC384 /* InfoPlist.strings in Resources */,
+				AA96A90A13CF5FA5007EC384 /* SGBaseFrameworkTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA96A8F613CF5FA5007EC384 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA96A8E713CF5FA4007EC384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA96A92B13CF626E007EC384 /* GTMSenTestCase.m in Sources */,
+				AA96A93413CF65BB007EC384 /* SGSafeRelease.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA96A8F313CF5FA5007EC384 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA96A90C13CF5FA5007EC384 /* SGBaseFrameworkTests.m in Sources */,
+				AA96A92613CF626E007EC384 /* GTMIPhoneUnitTestDelegate.m in Sources */,
+				AA96A92813CF626E007EC384 /* GTMIPhoneUnitTestMain.m in Sources */,
+				AA96A92C13CF626E007EC384 /* GTMSenTestCase.m in Sources */,
+				AA96A93513CF65BB007EC384 /* SGSafeRelease.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA96A90113CF5FA5007EC384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA96A8EA13CF5FA4007EC384 /* SGBaseFramework */;
+			targetProxy = AA96A90013CF5FA5007EC384 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA96A90613CF5FA5007EC384 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA96A90713CF5FA5007EC384 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA96A90D13CF5FA5007EC384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA96A90E13CF5FA5007EC384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA96A91013CF5FA5007EC384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				DSTROOT = /tmp/SGBaseFramework.dst;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SGBaseFramework/SGBaseFramework-Prefix.pch";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		AA96A91113CF5FA5007EC384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				DSTROOT = /tmp/SGBaseFramework.dst;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SGBaseFramework/SGBaseFramework-Prefix.pch";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+		AA96A91313CF5FA5007EC384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SGBaseFramework/SGBaseFramework-Prefix.pch";
+				INFOPLIST_FILE = "SGBaseFrameworkTests/SGBaseFrameworkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AA96A91413CF5FA5007EC384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SGBaseFramework/SGBaseFramework-Prefix.pch";
+				INFOPLIST_FILE = "SGBaseFrameworkTests/SGBaseFrameworkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA96A8E513CF5FA4007EC384 /* Build configuration list for PBXProject "SGBaseFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA96A90D13CF5FA5007EC384 /* Debug */,
+				AA96A90E13CF5FA5007EC384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA96A90F13CF5FA5007EC384 /* Build configuration list for PBXNativeTarget "SGBaseFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA96A91013CF5FA5007EC384 /* Debug */,
+				AA96A91113CF5FA5007EC384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA96A91213CF5FA5007EC384 /* Build configuration list for PBXNativeTarget "SGBaseFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA96A91313CF5FA5007EC384 /* Debug */,
+				AA96A91413CF5FA5007EC384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA96A8E213CF5FA4007EC384 /* Project object */;
+}
