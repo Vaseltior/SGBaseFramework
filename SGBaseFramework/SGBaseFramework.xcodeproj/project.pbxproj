@@ -25,7 +25,7 @@
 		AA96A93313CF65BB007EC384 /* SGSafeRelease.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A93113CF65BB007EC384 /* SGSafeRelease.h */; };
 		AA96A93413CF65BB007EC384 /* SGSafeRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93213CF65BB007EC384 /* SGSafeRelease.m */; };
 		AA96A93513CF65BB007EC384 /* SGSafeRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93213CF65BB007EC384 /* SGSafeRelease.m */; };
-		AA96A94013CF6801007EC384 /* SharedCLController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A93E13CF6801007EC384 /* SharedCLController.h */; };
+		AA96A94013CF6801007EC384 /* SharedCLController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A93E13CF6801007EC384 /* SharedCLController.h */; settings = {ATTRIBUTES = (); }; };
 		AA96A94113CF6801007EC384 /* SharedCLController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93F13CF6801007EC384 /* SharedCLController.m */; };
 		AA96A94213CF6801007EC384 /* SharedCLController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93F13CF6801007EC384 /* SharedCLController.m */; };
 		AA96A94413CF6811007EC384 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A94313CF6811007EC384 /* CoreLocation.framework */; };
@@ -34,6 +34,10 @@
 		AA96A94C13CF812F007EC384 /* NSObject+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A94A13CF812F007EC384 /* NSObject+Extensions.h */; };
 		AA96A94D13CF812F007EC384 /* NSObject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A94B13CF812F007EC384 /* NSObject+Extensions.m */; };
 		AA96A94E13CF812F007EC384 /* NSObject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A94B13CF812F007EC384 /* NSObject+Extensions.m */; };
+		AA96A97A13CF8E45007EC384 /* SGBaseFrameworkHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A97913CF8E45007EC384 /* SGBaseFrameworkHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA96A98613CF92D7007EC384 /* SGDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */; };
+		AA96A98713CF92D7007EC384 /* SGDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */; };
+		AA96A98813CF92D7007EC384 /* SGDictionaryHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A98513CF92D7007EC384 /* SGDictionaryHelper.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,9 @@
 		AA96A94713CF6839007EC384 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AA96A94A13CF812F007EC384 /* NSObject+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extensions.h"; sourceTree = "<group>"; };
 		AA96A94B13CF812F007EC384 /* NSObject+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extensions.m"; sourceTree = "<group>"; };
+		AA96A97913CF8E45007EC384 /* SGBaseFrameworkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGBaseFrameworkHeader.h; sourceTree = "<group>"; };
+		AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDictionaryHelper.m; sourceTree = "<group>"; };
+		AA96A98513CF92D7007EC384 /* SGDictionaryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDictionaryHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +140,7 @@
 		AA96A8F013CF5FA4007EC384 /* SGBaseFramework */ = {
 			isa = PBXGroup;
 			children = (
+				AA96A97913CF8E45007EC384 /* SGBaseFrameworkHeader.h */,
 				AA96A93713CF65CF007EC384 /* Third Party */,
 				AA96A91A13CF626E007EC384 /* Classes */,
 				AA96A91813CF5FE5007EC384 /* Common */,
@@ -201,6 +209,7 @@
 		AA96A93613CF65C4007EC384 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AA96A97E13CF9278007EC384 /* Helpers */,
 				AA96A94913CF8114007EC384 /* Additions */,
 				AA96A93813CF65E1007EC384 /* Memory */,
 			);
@@ -243,6 +252,15 @@
 			name = Additions;
 			sourceTree = "<group>";
 		};
+		AA96A97E13CF9278007EC384 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */,
+				AA96A98513CF92D7007EC384 /* SGDictionaryHelper.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -257,6 +275,8 @@
 				AA96A93313CF65BB007EC384 /* SGSafeRelease.h in Headers */,
 				AA96A94013CF6801007EC384 /* SharedCLController.h in Headers */,
 				AA96A94C13CF812F007EC384 /* NSObject+Extensions.h in Headers */,
+				AA96A97A13CF8E45007EC384 /* SGBaseFrameworkHeader.h in Headers */,
+				AA96A98813CF92D7007EC384 /* SGDictionaryHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +382,7 @@
 				AA96A93413CF65BB007EC384 /* SGSafeRelease.m in Sources */,
 				AA96A94113CF6801007EC384 /* SharedCLController.m in Sources */,
 				AA96A94D13CF812F007EC384 /* NSObject+Extensions.m in Sources */,
+				AA96A98613CF92D7007EC384 /* SGDictionaryHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +397,7 @@
 				AA96A93513CF65BB007EC384 /* SGSafeRelease.m in Sources */,
 				AA96A94213CF6801007EC384 /* SharedCLController.m in Sources */,
 				AA96A94E13CF812F007EC384 /* NSObject+Extensions.m in Sources */,
+				AA96A98713CF92D7007EC384 /* SGDictionaryHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +442,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -437,7 +459,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

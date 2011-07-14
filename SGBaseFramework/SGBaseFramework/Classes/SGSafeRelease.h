@@ -22,13 +22,26 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Safe releases
 
-static inline void sgReleaseSafely(NSObject **object);
-static inline void sgInvalidateTimer(NSObject **object);
+static inline void sgReleaseSafely(NSObject **object) {
+    [*object release];
+    *object = nil;
+}
+
+static inline void sgInvalidateTimer(NSObject **object) {
+    NSTimer *t = (NSTimer *)object;
+    [t invalidate];
+    *object = nil;
+}
 
 /**
  * Release a CoreFoundation object safely.
  */
-static inline void sgReleaseCFSafely(NSObject **object);
+static inline void sgReleaseCFSafely(NSObject **object) {
+    if (nil != (*object)) { 
+        CFRelease(*object); 
+        *object = nil;
+    }
+}
 
 /**
  * Shorthand for getting localized strings, 

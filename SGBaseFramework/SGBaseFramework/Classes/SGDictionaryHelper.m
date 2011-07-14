@@ -1,8 +1,7 @@
 //
-//  NSObject+Extensions.m
-//  SGBaseFramework
+//  SGDictionaryHelper.m
 //
-//  Created by Samuel Grau on 14/07/11.
+//  Created by Samuel Grau on 6/29/11.
 //  Copyright 2011 Samuel Grau. 
 //
 //  Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -18,24 +17,29 @@
 //  the License.
 //
 
-#import "NSObject+Extensions.h"
+#import "SGDictionaryHelper.h"
 
-@implementation NSObject (Extensions)
+@implementation SGDictionaryHelper
 
-- (id)performSelectorIfResponds:(SEL)aSelector
+- (id)init
 {
-    if ( [self respondsToSelector:aSelector] ) {
-        return [self performSelector:aSelector];
+    self = [super init];
+    if (self) {
+        // Initialization code here.
     }
-    return NULL;
+    
+    return self;
 }
 
-- (id)performSelectorIfResponds:(SEL)aSelector withObject:(id)anObject
-{
-    if ( [self respondsToSelector:aSelector] ) {
-        return [self performSelector:aSelector withObject:anObject];
-    }
-    return NULL;
++ (id)valueForKey:(id)key 
+     inDictionary:(NSDictionary *)aDict 
+     expectedType:(Class)aClass 
+  andDefaultValue:(id)defaultValue {
+    
+    id value = [aDict objectForKey:key];
+    if (!value) return defaultValue;
+    if (![value isKindOfClass:aClass]) return defaultValue;
+    return value;
 }
 
 @end
