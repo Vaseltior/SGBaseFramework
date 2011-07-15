@@ -23,8 +23,6 @@
 		AA96A92B13CF626E007EC384 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A92213CF626E007EC384 /* GTMSenTestCase.m */; };
 		AA96A92C13CF626E007EC384 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A92213CF626E007EC384 /* GTMSenTestCase.m */; };
 		AA96A93313CF65BB007EC384 /* SGSafeRelease.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A93113CF65BB007EC384 /* SGSafeRelease.h */; };
-		AA96A93413CF65BB007EC384 /* SGSafeRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93213CF65BB007EC384 /* SGSafeRelease.m */; };
-		AA96A93513CF65BB007EC384 /* SGSafeRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93213CF65BB007EC384 /* SGSafeRelease.m */; };
 		AA96A94013CF6801007EC384 /* SharedCLController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A93E13CF6801007EC384 /* SharedCLController.h */; settings = {ATTRIBUTES = (); }; };
 		AA96A94113CF6801007EC384 /* SharedCLController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93F13CF6801007EC384 /* SharedCLController.m */; };
 		AA96A94213CF6801007EC384 /* SharedCLController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A93F13CF6801007EC384 /* SharedCLController.m */; };
@@ -68,7 +66,6 @@
 		AA96A92113CF626E007EC384 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
 		AA96A92213CF626E007EC384 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
 		AA96A93113CF65BB007EC384 /* SGSafeRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSafeRelease.h; sourceTree = "<group>"; };
-		AA96A93213CF65BB007EC384 /* SGSafeRelease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSafeRelease.m; sourceTree = "<group>"; };
 		AA96A93E13CF6801007EC384 /* SharedCLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedCLController.h; sourceTree = "<group>"; };
 		AA96A93F13CF6801007EC384 /* SharedCLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedCLController.m; sourceTree = "<group>"; };
 		AA96A94313CF6811007EC384 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -186,7 +183,7 @@
 		AA96A91A13CF626E007EC384 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AA96A93C13CF674F007EC384 /* Geolocalization */,
+				AA96A93C13CF674F007EC384 /* Geolocation */,
 				AA96A93613CF65C4007EC384 /* Common */,
 			);
 			path = Classes;
@@ -229,18 +226,17 @@
 			isa = PBXGroup;
 			children = (
 				AA96A93113CF65BB007EC384 /* SGSafeRelease.h */,
-				AA96A93213CF65BB007EC384 /* SGSafeRelease.m */,
 			);
 			name = Memory;
 			sourceTree = "<group>";
 		};
-		AA96A93C13CF674F007EC384 /* Geolocalization */ = {
+		AA96A93C13CF674F007EC384 /* Geolocation */ = {
 			isa = PBXGroup;
 			children = (
 				AA96A93E13CF6801007EC384 /* SharedCLController.h */,
 				AA96A93F13CF6801007EC384 /* SharedCLController.m */,
 			);
-			name = Geolocalization;
+			name = Geolocation;
 			sourceTree = "<group>";
 		};
 		AA96A94913CF8114007EC384 /* Additions */ = {
@@ -255,8 +251,8 @@
 		AA96A97E13CF9278007EC384 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */,
 				AA96A98513CF92D7007EC384 /* SGDictionaryHelper.h */,
+				AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -379,7 +375,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA96A92B13CF626E007EC384 /* GTMSenTestCase.m in Sources */,
-				AA96A93413CF65BB007EC384 /* SGSafeRelease.m in Sources */,
 				AA96A94113CF6801007EC384 /* SharedCLController.m in Sources */,
 				AA96A94D13CF812F007EC384 /* NSObject+Extensions.m in Sources */,
 				AA96A98613CF92D7007EC384 /* SGDictionaryHelper.m in Sources */,
@@ -394,7 +389,6 @@
 				AA96A92613CF626E007EC384 /* GTMIPhoneUnitTestDelegate.m in Sources */,
 				AA96A92813CF626E007EC384 /* GTMIPhoneUnitTestMain.m in Sources */,
 				AA96A92C13CF626E007EC384 /* GTMSenTestCase.m in Sources */,
-				AA96A93513CF65BB007EC384 /* SGSafeRelease.m in Sources */,
 				AA96A94213CF6801007EC384 /* SharedCLController.m in Sources */,
 				AA96A94E13CF812F007EC384 /* NSObject+Extensions.m in Sources */,
 				AA96A98713CF92D7007EC384 /* SGDictionaryHelper.m in Sources */,

@@ -9,7 +9,10 @@
 #ifndef SGBaseFramework_SGBaseFrameworkHeader_h
 #define SGBaseFramework_SGBaseFrameworkHeader_h
 
-// Geolocalization
+// GoogleToolboxForMac
+#import "Classes/GoogleToolkitForMac/GTMObjectSingleton.h"
+
+// Geolocation
 #import "Classes/SharedCLController.h"
 
 // Memory
