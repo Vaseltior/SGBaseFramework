@@ -29,7 +29,9 @@
 #endif
 #endif
 
-//#define _GTMDevAssert(condition, ...) do { } while (0)
+#ifndef _GTMDevAssert
+#define _GTMDevAssert(condition, ...) do { } while (0)
+#endif
 
 // GTMBase64
 //
