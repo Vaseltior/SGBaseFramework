@@ -11,6 +11,7 @@
 
 // GoogleToolboxForMac
 #import "Classes/GoogleToolkitForMac/GTMObjectSingleton.h"
+#import "Classes/GoogleToolkitForMac/GTMBase64.h"
 
 // Geolocation
 #import "Classes/SharedCLController.h"

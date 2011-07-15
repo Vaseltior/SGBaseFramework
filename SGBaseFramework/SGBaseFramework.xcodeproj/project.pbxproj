@@ -36,6 +36,8 @@
 		AA96A98613CF92D7007EC384 /* SGDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */; };
 		AA96A98713CF92D7007EC384 /* SGDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */; };
 		AA96A98813CF92D7007EC384 /* SGDictionaryHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A98513CF92D7007EC384 /* SGDictionaryHelper.h */; };
+		F5A030C413D031D80046A6DA /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A030C213D031D80046A6DA /* GTMBase64.h */; };
+		F5A030C513D031D80046A6DA /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A030C313D031D80046A6DA /* GTMBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		AA96A97913CF8E45007EC384 /* SGBaseFrameworkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGBaseFrameworkHeader.h; sourceTree = "<group>"; };
 		AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDictionaryHelper.m; sourceTree = "<group>"; };
 		AA96A98513CF92D7007EC384 /* SGDictionaryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDictionaryHelper.h; sourceTree = "<group>"; };
+		F5A030C213D031D80046A6DA /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		F5A030C313D031D80046A6DA /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,8 @@
 		AA96A91B13CF626E007EC384 /* GoogleToolkitForMac */ = {
 			isa = PBXGroup;
 			children = (
+				F5A030C213D031D80046A6DA /* GTMBase64.h */,
+				F5A030C313D031D80046A6DA /* GTMBase64.m */,
 				AA96A91C13CF626E007EC384 /* GTMDefines.h */,
 				AA96A91D13CF626E007EC384 /* GTMIPhoneUnitTestDelegate.h */,
 				AA96A91E13CF626E007EC384 /* GTMIPhoneUnitTestDelegate.m */,
@@ -273,6 +279,7 @@
 				AA96A94C13CF812F007EC384 /* NSObject+Extensions.h in Headers */,
 				AA96A97A13CF8E45007EC384 /* SGBaseFrameworkHeader.h in Headers */,
 				AA96A98813CF92D7007EC384 /* SGDictionaryHelper.h in Headers */,
+				F5A030C413D031D80046A6DA /* GTMBase64.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +385,7 @@
 				AA96A94113CF6801007EC384 /* SharedCLController.m in Sources */,
 				AA96A94D13CF812F007EC384 /* NSObject+Extensions.m in Sources */,
 				AA96A98613CF92D7007EC384 /* SGDictionaryHelper.m in Sources */,
+				F5A030C513D031D80046A6DA /* GTMBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
