@@ -38,6 +38,12 @@
 		AA96A98813CF92D7007EC384 /* SGDictionaryHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A98513CF92D7007EC384 /* SGDictionaryHelper.h */; };
 		F5A030C413D031D80046A6DA /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A030C213D031D80046A6DA /* GTMBase64.h */; };
 		F5A030C513D031D80046A6DA /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A030C313D031D80046A6DA /* GTMBase64.m */; };
+		F5A030DD13D03C0E0046A6DA /* NSString+EMail.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A030D913D03C0E0046A6DA /* NSString+EMail.h */; };
+		F5A030DE13D03C0E0046A6DA /* NSString+EMail.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A030DA13D03C0E0046A6DA /* NSString+EMail.m */; };
+		F5A030DF13D03C0E0046A6DA /* NSString+EMail.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A030DA13D03C0E0046A6DA /* NSString+EMail.m */; };
+		F5A030E013D03C0E0046A6DA /* NSString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A030DB13D03C0E0046A6DA /* NSString+HTML.h */; };
+		F5A030E113D03C0E0046A6DA /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A030DC13D03C0E0046A6DA /* NSString+HTML.m */; };
+		F5A030E213D03C0E0046A6DA /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A030DC13D03C0E0046A6DA /* NSString+HTML.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +86,10 @@
 		AA96A98513CF92D7007EC384 /* SGDictionaryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDictionaryHelper.h; sourceTree = "<group>"; };
 		F5A030C213D031D80046A6DA /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		F5A030C313D031D80046A6DA /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		F5A030D913D03C0E0046A6DA /* NSString+EMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EMail.h"; sourceTree = "<group>"; };
+		F5A030DA13D03C0E0046A6DA /* NSString+EMail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EMail.m"; sourceTree = "<group>"; };
+		F5A030DB13D03C0E0046A6DA /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		F5A030DC13D03C0E0046A6DA /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,8 +258,8 @@
 		AA96A94913CF8114007EC384 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
-				AA96A94A13CF812F007EC384 /* NSObject+Extensions.h */,
-				AA96A94B13CF812F007EC384 /* NSObject+Extensions.m */,
+				F5A030CE13D03B5C0046A6DA /* NSObject */,
+				F5A030CD13D03B4D0046A6DA /* NSString */,
 			);
 			name = Additions;
 			sourceTree = "<group>";
@@ -261,6 +271,26 @@
 				AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		F5A030CD13D03B4D0046A6DA /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				F5A030D913D03C0E0046A6DA /* NSString+EMail.h */,
+				F5A030DA13D03C0E0046A6DA /* NSString+EMail.m */,
+				F5A030DB13D03C0E0046A6DA /* NSString+HTML.h */,
+				F5A030DC13D03C0E0046A6DA /* NSString+HTML.m */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
+		F5A030CE13D03B5C0046A6DA /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				AA96A94A13CF812F007EC384 /* NSObject+Extensions.h */,
+				AA96A94B13CF812F007EC384 /* NSObject+Extensions.m */,
+			);
+			name = NSObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +310,8 @@
 				AA96A97A13CF8E45007EC384 /* SGBaseFrameworkHeader.h in Headers */,
 				AA96A98813CF92D7007EC384 /* SGDictionaryHelper.h in Headers */,
 				F5A030C413D031D80046A6DA /* GTMBase64.h in Headers */,
+				F5A030DD13D03C0E0046A6DA /* NSString+EMail.h in Headers */,
+				F5A030E013D03C0E0046A6DA /* NSString+HTML.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +418,8 @@
 				AA96A94D13CF812F007EC384 /* NSObject+Extensions.m in Sources */,
 				AA96A98613CF92D7007EC384 /* SGDictionaryHelper.m in Sources */,
 				F5A030C513D031D80046A6DA /* GTMBase64.m in Sources */,
+				F5A030DE13D03C0E0046A6DA /* NSString+EMail.m in Sources */,
+				F5A030E113D03C0E0046A6DA /* NSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +434,8 @@
 				AA96A94213CF6801007EC384 /* SharedCLController.m in Sources */,
 				AA96A94E13CF812F007EC384 /* NSObject+Extensions.m in Sources */,
 				AA96A98713CF92D7007EC384 /* SGDictionaryHelper.m in Sources */,
+				F5A030DF13D03C0E0046A6DA /* NSString+EMail.m in Sources */,
+				F5A030E213D03C0E0046A6DA /* NSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

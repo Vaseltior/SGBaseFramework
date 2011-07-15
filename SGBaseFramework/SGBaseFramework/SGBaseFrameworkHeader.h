@@ -21,6 +21,8 @@
 
 // Additions
 #import "Classes/NSObject+Extensions.h"
+#import "Classes/NSString+HTML.h"
+#import "Classes/NSString+EMail.h"
 
 // Helper
 #import "Classes/SGDictionaryHelper.h"
