@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA023A4613D1882C0011C1DC /* SGCoreApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = AA023A4513D1882C0011C1DC /* SGCoreApplication.h */; };
 		AA96A8EF13CF5FA4007EC384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8EE13CF5FA4007EC384 /* Foundation.framework */; };
 		AA96A8FA13CF5FA5007EC384 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8F913CF5FA5007EC384 /* SenTestingKit.framework */; };
 		AA96A8FD13CF5FA5007EC384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8EE13CF5FA4007EC384 /* Foundation.framework */; };
@@ -57,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA0239B813D17F7F0011C1DC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = /Users/vaseltior/Documents/Projets/GIT_Projects/SGBaseFramework/SGBaseFramework/SGBaseFrameworkTests/fr.lproj/InfoPlist.strings; sourceTree = "<absolute>"; };
+		AA023A4513D1882C0011C1DC /* SGCoreApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCoreApplication.h; sourceTree = "<group>"; };
 		AA96A8EB13CF5FA4007EC384 /* libSGBaseFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSGBaseFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA96A8EE13CF5FA4007EC384 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA96A8F213CF5FA4007EC384 /* SGBaseFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SGBaseFramework-Prefix.pch"; sourceTree = "<group>"; };
@@ -117,6 +120,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA023A4413D1880B0011C1DC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AA023A4513D1882C0011C1DC /* SGCoreApplication.h */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
 		AA96A8E013CF5FA4007EC384 = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +165,6 @@
 				AA96A97913CF8E45007EC384 /* SGBaseFrameworkHeader.h */,
 				AA96A93713CF65CF007EC384 /* Third Party */,
 				AA96A91A13CF626E007EC384 /* Classes */,
-				AA96A91813CF5FE5007EC384 /* Common */,
 				AA96A8F113CF5FA4007EC384 /* Supporting Files */,
 			);
 			path = SGBaseFramework;
@@ -187,13 +197,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AA96A91813CF5FE5007EC384 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
 		AA96A91A13CF626E007EC384 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +225,7 @@
 		AA96A93613CF65C4007EC384 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AA023A4413D1880B0011C1DC /* Application */,
 				AA96A97E13CF9278007EC384 /* Helpers */,
 				AA96A94913CF8114007EC384 /* Additions */,
 				AA96A93813CF65E1007EC384 /* Memory */,
@@ -312,6 +316,7 @@
 				F5A030C413D031D80046A6DA /* GTMBase64.h in Headers */,
 				F5A030DD13D03C0E0046A6DA /* NSString+EMail.h in Headers */,
 				F5A030E013D03C0E0046A6DA /* NSString+HTML.h in Headers */,
+				AA023A4613D1882C0011C1DC /* SGCoreApplication.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +459,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AA96A90713CF5FA5007EC384 /* en */,
+				AA0239B813D17F7F0011C1DC /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

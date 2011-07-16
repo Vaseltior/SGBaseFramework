@@ -16,6 +16,9 @@
 // Geolocation
 #import "Classes/SharedCLController.h"
 
+// Core
+#import "Classes/SGCoreApplication.h"
+
 // Memory
 #import "Classes/SGSafeRelease.h"
 
