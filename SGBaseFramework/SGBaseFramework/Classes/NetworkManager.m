@@ -61,7 +61,7 @@
 
 // private properties
 
-@property (nonatomic, retain, readonly ) NSThread *             networkRunLoopThread;
+@property (atomic, retain, readonly ) NSThread *             networkRunLoopThread;
 
 @property (nonatomic, retain, readonly ) NSOperationQueue *     queueForNetworkTransfers;
 @property (nonatomic, retain, readonly ) NSOperationQueue *     queueForNetworkManagement;

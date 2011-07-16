@@ -40,6 +40,21 @@
 		AA96A98613CF92D7007EC384 /* SGDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */; };
 		AA96A98713CF92D7007EC384 /* SGDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */; };
 		AA96A98813CF92D7007EC384 /* SGDictionaryHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A98513CF92D7007EC384 /* SGDictionaryHelper.h */; };
+		AAC2F29513D23537009D4EE7 /* QHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F29313D23537009D4EE7 /* QHTTPOperation.h */; };
+		AAC2F29613D23537009D4EE7 /* QHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29413D23537009D4EE7 /* QHTTPOperation.m */; };
+		AAC2F29713D23537009D4EE7 /* QHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29413D23537009D4EE7 /* QHTTPOperation.m */; };
+		AAC2F29A13D23558009D4EE7 /* QRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F29813D23558009D4EE7 /* QRunLoopOperation.h */; };
+		AAC2F29B13D23558009D4EE7 /* QRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29913D23558009D4EE7 /* QRunLoopOperation.m */; };
+		AAC2F29C13D23558009D4EE7 /* QRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29913D23558009D4EE7 /* QRunLoopOperation.m */; };
+		AAC2F2A313D23599009D4EE7 /* Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F29D13D23598009D4EE7 /* Logging.h */; };
+		AAC2F2A413D23599009D4EE7 /* QLog.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F29E13D23599009D4EE7 /* QLog.h */; };
+		AAC2F2A513D23599009D4EE7 /* QLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29F13D23599009D4EE7 /* QLog.m */; };
+		AAC2F2A613D23599009D4EE7 /* QLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29F13D23599009D4EE7 /* QLog.m */; };
+		AAC2F2A713D23599009D4EE7 /* QLogViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F2A013D23599009D4EE7 /* QLogViewer.h */; };
+		AAC2F2A813D23599009D4EE7 /* QLogViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F2A113D23599009D4EE7 /* QLogViewer.m */; };
+		AAC2F2A913D23599009D4EE7 /* QLogViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F2A113D23599009D4EE7 /* QLogViewer.m */; };
+		AAC2F2AA13D23599009D4EE7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAC2F2A213D23599009D4EE7 /* Settings.bundle */; };
+		AAC2F2AC13D2365F009D4EE7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC2F2AB13D2365F009D4EE7 /* libz.dylib */; };
 		F5A030C413D031D80046A6DA /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A030C213D031D80046A6DA /* GTMBase64.h */; };
 		F5A030C513D031D80046A6DA /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A030C313D031D80046A6DA /* GTMBase64.m */; };
 		F5A030DD13D03C0E0046A6DA /* NSString+EMail.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A030D913D03C0E0046A6DA /* NSString+EMail.h */; };
@@ -92,6 +107,17 @@
 		AA96A97913CF8E45007EC384 /* SGBaseFrameworkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGBaseFrameworkHeader.h; sourceTree = "<group>"; };
 		AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDictionaryHelper.m; sourceTree = "<group>"; };
 		AA96A98513CF92D7007EC384 /* SGDictionaryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDictionaryHelper.h; sourceTree = "<group>"; };
+		AAC2F29313D23537009D4EE7 /* QHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHTTPOperation.h; sourceTree = "<group>"; };
+		AAC2F29413D23537009D4EE7 /* QHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHTTPOperation.m; sourceTree = "<group>"; };
+		AAC2F29813D23558009D4EE7 /* QRunLoopOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRunLoopOperation.h; sourceTree = "<group>"; };
+		AAC2F29913D23558009D4EE7 /* QRunLoopOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRunLoopOperation.m; sourceTree = "<group>"; };
+		AAC2F29D13D23598009D4EE7 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
+		AAC2F29E13D23599009D4EE7 /* QLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLog.h; sourceTree = "<group>"; };
+		AAC2F29F13D23599009D4EE7 /* QLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLog.m; sourceTree = "<group>"; };
+		AAC2F2A013D23599009D4EE7 /* QLogViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLogViewer.h; sourceTree = "<group>"; };
+		AAC2F2A113D23599009D4EE7 /* QLogViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLogViewer.m; sourceTree = "<group>"; };
+		AAC2F2A213D23599009D4EE7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		AAC2F2AB13D2365F009D4EE7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		F5A030C213D031D80046A6DA /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		F5A030C313D031D80046A6DA /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		F5A030D913D03C0E0046A6DA /* NSString+EMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EMail.h"; sourceTree = "<group>"; };
@@ -105,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC2F2AC13D2365F009D4EE7 /* libz.dylib in Frameworks */,
 				AA96A94813CF6839007EC384 /* UIKit.framework in Frameworks */,
 				AA96A94613CF6826007EC384 /* CoreGraphics.framework in Frameworks */,
 				AA96A94413CF6811007EC384 /* CoreLocation.framework in Frameworks */,
@@ -136,6 +163,16 @@
 		AA023B7213D20F8B0011C1DC /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				AAC2F29D13D23598009D4EE7 /* Logging.h */,
+				AAC2F29E13D23599009D4EE7 /* QLog.h */,
+				AAC2F29F13D23599009D4EE7 /* QLog.m */,
+				AAC2F2A013D23599009D4EE7 /* QLogViewer.h */,
+				AAC2F2A113D23599009D4EE7 /* QLogViewer.m */,
+				AAC2F2A213D23599009D4EE7 /* Settings.bundle */,
+				AAC2F29813D23558009D4EE7 /* QRunLoopOperation.h */,
+				AAC2F29913D23558009D4EE7 /* QRunLoopOperation.m */,
+				AAC2F29313D23537009D4EE7 /* QHTTPOperation.h */,
+				AAC2F29413D23537009D4EE7 /* QHTTPOperation.m */,
 				AA023B7C13D211030011C1DC /* NetworkManager.h */,
 				AA023B7D13D211030011C1DC /* NetworkManager.m */,
 			);
@@ -164,6 +201,7 @@
 		AA96A8ED13CF5FA4007EC384 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AAC2F2AB13D2365F009D4EE7 /* libz.dylib */,
 				AA96A94713CF6839007EC384 /* UIKit.framework */,
 				AA96A94513CF6826007EC384 /* CoreGraphics.framework */,
 				AA96A94313CF6811007EC384 /* CoreLocation.framework */,
@@ -176,6 +214,7 @@
 		AA96A8F013CF5FA4007EC384 /* SGBaseFramework */ = {
 			isa = PBXGroup;
 			children = (
+				AAC2F28B13D22F25009D4EE7 /* Three20Inheritance */,
 				AA96A97913CF8E45007EC384 /* SGBaseFrameworkHeader.h */,
 				AA96A93713CF65CF007EC384 /* Third Party */,
 				AA96A91A13CF626E007EC384 /* Classes */,
@@ -292,6 +331,13 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		AAC2F28B13D22F25009D4EE7 /* Three20Inheritance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Three20Inheritance;
+			sourceTree = "<group>";
+		};
 		F5A030CD13D03B4D0046A6DA /* NSString */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,6 +379,11 @@
 				F5A030E013D03C0E0046A6DA /* NSString+HTML.h in Headers */,
 				AA023A4613D1882C0011C1DC /* SGCoreApplication.h in Headers */,
 				AA023B7E13D211030011C1DC /* NetworkManager.h in Headers */,
+				AAC2F29513D23537009D4EE7 /* QHTTPOperation.h in Headers */,
+				AAC2F29A13D23558009D4EE7 /* QRunLoopOperation.h in Headers */,
+				AAC2F2A313D23599009D4EE7 /* Logging.h in Headers */,
+				AAC2F2A413D23599009D4EE7 /* QLog.h in Headers */,
+				AAC2F2A713D23599009D4EE7 /* QLogViewer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +459,7 @@
 			files = (
 				AA96A90813CF5FA5007EC384 /* InfoPlist.strings in Resources */,
 				AA96A90A13CF5FA5007EC384 /* SGBaseFrameworkTests.h in Resources */,
+				AAC2F2AA13D23599009D4EE7 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +494,10 @@
 				F5A030DE13D03C0E0046A6DA /* NSString+EMail.m in Sources */,
 				F5A030E113D03C0E0046A6DA /* NSString+HTML.m in Sources */,
 				AA023B7F13D211030011C1DC /* NetworkManager.m in Sources */,
+				AAC2F29613D23537009D4EE7 /* QHTTPOperation.m in Sources */,
+				AAC2F29B13D23558009D4EE7 /* QRunLoopOperation.m in Sources */,
+				AAC2F2A513D23599009D4EE7 /* QLog.m in Sources */,
+				AAC2F2A813D23599009D4EE7 /* QLogViewer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +515,10 @@
 				F5A030DF13D03C0E0046A6DA /* NSString+EMail.m in Sources */,
 				F5A030E213D03C0E0046A6DA /* NSString+HTML.m in Sources */,
 				AA023B8013D211030011C1DC /* NetworkManager.m in Sources */,
+				AAC2F29713D23537009D4EE7 /* QHTTPOperation.m in Sources */,
+				AAC2F29C13D23558009D4EE7 /* QRunLoopOperation.m in Sources */,
+				AAC2F2A613D23599009D4EE7 /* QLog.m in Sources */,
+				AAC2F2A913D23599009D4EE7 /* QLogViewer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
