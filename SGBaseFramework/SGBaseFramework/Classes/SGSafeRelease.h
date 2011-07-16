@@ -23,6 +23,7 @@
 // Safe releases
 
 static inline void sgReleaseSafely(NSObject **object) {
+    if (!*object) return;
     [*object release];
     *object = nil;
 }
