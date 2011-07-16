@@ -30,4 +30,7 @@
 // Helper
 #import "Classes/SGDictionaryHelper.h"
 
+// Network
+#import "Classes/NetworkManager.h"
+
 #endif
