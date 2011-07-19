@@ -44,11 +44,11 @@ static inline CGFloat sgRandomNormalized(void) {
 }
 
 static inline NSUInteger sgRandomBounded(NSUInteger leftBound, NSUInteger rightBound) {
-    return (arc4random() % rightBound) + leftBound;
+    return (arc4random() % (rightBound-leftBound)) + leftBound;
 }
 
 static inline CGFloat sgRandomBoundedf(CGFloat leftBound, CGFloat rightBound) {
-    return (CGFloat)(arc4random() % (NSUInteger)rightBound) + leftBound;
+    return (CGFloat)(arc4random() % (NSUInteger)(rightBound-leftBound)) + leftBound;
 }
 
 
