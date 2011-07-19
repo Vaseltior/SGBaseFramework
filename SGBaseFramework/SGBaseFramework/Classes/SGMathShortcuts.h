@@ -47,6 +47,10 @@ static inline NSUInteger sgRandomBounded(NSUInteger leftBound, NSUInteger rightB
     return (arc4random() % (rightBound-leftBound)) + leftBound;
 }
 
+static inline BOOL sgRandomBoolean(void) {
+    return (BOOL)(arc4random() % (1));
+}
+
 static inline CGFloat sgRandomBoundedf(CGFloat leftBound, CGFloat rightBound) {
     return (CGFloat)(arc4random() % (NSUInteger)(rightBound-leftBound)) + leftBound;
 }
