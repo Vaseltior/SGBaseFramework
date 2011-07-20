@@ -55,6 +55,7 @@
 		AAC2F2A913D23599009D4EE7 /* QLogViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F2A113D23599009D4EE7 /* QLogViewer.m */; };
 		AAC2F2AA13D23599009D4EE7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAC2F2A213D23599009D4EE7 /* Settings.bundle */; };
 		AAC2F2AC13D2365F009D4EE7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC2F2AB13D2365F009D4EE7 /* libz.dylib */; };
+		F5448E2B13D6E314000324D8 /* NSString_EmailTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5448E2A13D6E314000324D8 /* NSString_EmailTest.m */; };
 		F573A67F13D486BF006070A8 /* SGMathShortcuts.h in Headers */ = {isa = PBXBuildFile; fileRef = F573A67E13D486BF006070A8 /* SGMathShortcuts.h */; };
 		F5A030C413D031D80046A6DA /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A030C213D031D80046A6DA /* GTMBase64.h */; };
 		F5A030C513D031D80046A6DA /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A030C313D031D80046A6DA /* GTMBase64.m */; };
@@ -119,6 +120,8 @@
 		AAC2F2A113D23599009D4EE7 /* QLogViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLogViewer.m; sourceTree = "<group>"; };
 		AAC2F2A213D23599009D4EE7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		AAC2F2AB13D2365F009D4EE7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F5448E2913D6E314000324D8 /* NSString_EmailTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_EmailTest.h; sourceTree = "<group>"; };
+		F5448E2A13D6E314000324D8 /* NSString_EmailTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_EmailTest.m; sourceTree = "<group>"; };
 		F573A67E13D486BF006070A8 /* SGMathShortcuts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMathShortcuts.h; sourceTree = "<group>"; };
 		F5A030C213D031D80046A6DA /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		F5A030C313D031D80046A6DA /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
@@ -255,6 +258,8 @@
 		AA96A91A13CF626E007EC384 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F5448E2913D6E314000324D8 /* NSString_EmailTest.h */,
+				F5448E2A13D6E314000324D8 /* NSString_EmailTest.m */,
 				F573A67C13D48697006070A8 /* Mathematics */,
 				AA96A93C13CF674F007EC384 /* Geolocation */,
 				AA96A93613CF65C4007EC384 /* Common */,
@@ -531,6 +536,7 @@
 				AAC2F29C13D23558009D4EE7 /* QRunLoopOperation.m in Sources */,
 				AAC2F2A613D23599009D4EE7 /* QLog.m in Sources */,
 				AAC2F2A913D23599009D4EE7 /* QLogViewer.m in Sources */,
+				F5448E2B13D6E314000324D8 /* NSString_EmailTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

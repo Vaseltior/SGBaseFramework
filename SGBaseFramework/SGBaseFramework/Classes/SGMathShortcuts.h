@@ -9,7 +9,7 @@
 #ifndef SGBaseFramework_SGMathShortcuts_h
 #define SGBaseFramework_SGMathShortcuts_h
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #define ARC4RANDOM_MAX      0x100000000
 
