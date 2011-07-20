@@ -57,6 +57,9 @@
 		AAC2F2AC13D2365F009D4EE7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC2F2AB13D2365F009D4EE7 /* libz.dylib */; };
 		F5448E2B13D6E314000324D8 /* NSString_EmailTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5448E2A13D6E314000324D8 /* NSString_EmailTest.m */; };
 		F573A67F13D486BF006070A8 /* SGMathShortcuts.h in Headers */ = {isa = PBXBuildFile; fileRef = F573A67E13D486BF006070A8 /* SGMathShortcuts.h */; };
+		AAFAF38313D2ED770037EDD2 /* UncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFAF38113D2ED770037EDD2 /* UncaughtExceptionHandler.h */; };
+		AAFAF38413D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF38213D2ED770037EDD2 /* UncaughtExceptionHandler.m */; };
+		AAFAF38513D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF38213D2ED770037EDD2 /* UncaughtExceptionHandler.m */; };
 		F5A030C413D031D80046A6DA /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A030C213D031D80046A6DA /* GTMBase64.h */; };
 		F5A030C513D031D80046A6DA /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A030C313D031D80046A6DA /* GTMBase64.m */; };
 		F5A030DD13D03C0E0046A6DA /* NSString+EMail.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A030D913D03C0E0046A6DA /* NSString+EMail.h */; };
@@ -123,6 +126,8 @@
 		F5448E2913D6E314000324D8 /* NSString_EmailTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_EmailTest.h; sourceTree = "<group>"; };
 		F5448E2A13D6E314000324D8 /* NSString_EmailTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_EmailTest.m; sourceTree = "<group>"; };
 		F573A67E13D486BF006070A8 /* SGMathShortcuts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMathShortcuts.h; sourceTree = "<group>"; };
+		AAFAF38113D2ED770037EDD2 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		AAFAF38213D2ED770037EDD2 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		F5A030C213D031D80046A6DA /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		F5A030C313D031D80046A6DA /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		F5A030D913D03C0E0046A6DA /* NSString+EMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EMail.h"; sourceTree = "<group>"; };
@@ -286,6 +291,7 @@
 		AA96A93613CF65C4007EC384 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AAFAF38713D2ED7B0037EDD2 /* Debug */,
 				AA023B7213D20F8B0011C1DC /* Operations */,
 				AA023A4413D1880B0011C1DC /* Application */,
 				AA96A97E13CF9278007EC384 /* Helpers */,
@@ -352,6 +358,13 @@
 				F573A67E13D486BF006070A8 /* SGMathShortcuts.h */,
 			);
 			name = Mathematics;
+		AAFAF38713D2ED7B0037EDD2 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				AAFAF38113D2ED770037EDD2 /* UncaughtExceptionHandler.h */,
+				AAFAF38213D2ED770037EDD2 /* UncaughtExceptionHandler.m */,
+			);
+			name = Debug;
 			sourceTree = "<group>";
 		};
 		F5A030CD13D03B4D0046A6DA /* NSString */ = {
@@ -401,6 +414,7 @@
 				AAC2F2A413D23599009D4EE7 /* QLog.h in Headers */,
 				AAC2F2A713D23599009D4EE7 /* QLogViewer.h in Headers */,
 				F573A67F13D486BF006070A8 /* SGMathShortcuts.h in Headers */,
+				AAFAF38313D2ED770037EDD2 /* UncaughtExceptionHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +529,7 @@
 				AAC2F29B13D23558009D4EE7 /* QRunLoopOperation.m in Sources */,
 				AAC2F2A513D23599009D4EE7 /* QLog.m in Sources */,
 				AAC2F2A813D23599009D4EE7 /* QLogViewer.m in Sources */,
+				AAFAF38413D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +552,7 @@
 				AAC2F2A613D23599009D4EE7 /* QLog.m in Sources */,
 				AAC2F2A913D23599009D4EE7 /* QLogViewer.m in Sources */,
 				F5448E2B13D6E314000324D8 /* NSString_EmailTest.m in Sources */,
+				AAFAF38513D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

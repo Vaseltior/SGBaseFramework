@@ -9,8 +9,12 @@
 #ifndef SGBaseFramework_SGBaseFrameworkHeader_h
 #define SGBaseFramework_SGBaseFrameworkHeader_h
 
+
 // Mathematics
 #import "Classes/SGMathShortcuts.h"
+
+// Debug
+#import "Classes/UncaughtExceptionHandler.h"
 
 // GoogleToolboxForMac
 #import "Classes/GoogleToolkitForMac/GTMObjectSingleton.h"
