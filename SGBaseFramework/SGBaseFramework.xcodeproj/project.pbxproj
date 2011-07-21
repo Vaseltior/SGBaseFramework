@@ -358,6 +358,8 @@
 				F573A67E13D486BF006070A8 /* SGMathShortcuts.h */,
 			);
 			name = Mathematics;
+			sourceTree = "<group>";
+		};
 		AAFAF38713D2ED7B0037EDD2 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
