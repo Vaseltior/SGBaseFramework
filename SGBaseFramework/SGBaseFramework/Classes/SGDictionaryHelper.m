@@ -36,6 +36,7 @@
      expectedType:(Class)aClass 
   andDefaultValue:(id)defaultValue {
     
+    if (nil == key) return defaultValue;
     id value = [aDict objectForKey:key];
     if (!value) return defaultValue;
     if (![value isKindOfClass:aClass]) return defaultValue;
