@@ -39,7 +39,10 @@
     if (nil == key) return defaultValue;
     id value = [aDict objectForKey:key];
     if (!value) return defaultValue;
-    if (![value isKindOfClass:aClass]) return defaultValue;
+    if (![value isKindOfClass:aClass]) {
+        NSLog(@"%@ %@", aClass, [value class]);
+        return defaultValue;   
+    }
     return value;
 }
 
