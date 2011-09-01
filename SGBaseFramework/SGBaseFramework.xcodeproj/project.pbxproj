@@ -36,7 +36,7 @@
 		AA96A94C13CF812F007EC384 /* NSObject+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A94A13CF812F007EC384 /* NSObject+Extensions.h */; };
 		AA96A94D13CF812F007EC384 /* NSObject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A94B13CF812F007EC384 /* NSObject+Extensions.m */; };
 		AA96A94E13CF812F007EC384 /* NSObject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A94B13CF812F007EC384 /* NSObject+Extensions.m */; };
-		AA96A97A13CF8E45007EC384 /* SGBaseFrameworkHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A97913CF8E45007EC384 /* SGBaseFrameworkHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA96A97A13CF8E45007EC384 /* SGBaseFrameworkHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A97913CF8E45007EC384 /* SGBaseFrameworkHeader.h */; settings = {ATTRIBUTES = (); }; };
 		AA96A98613CF92D7007EC384 /* SGDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */; };
 		AA96A98713CF92D7007EC384 /* SGDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */; };
 		AA96A98813CF92D7007EC384 /* SGDictionaryHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A98513CF92D7007EC384 /* SGDictionaryHelper.h */; };
@@ -397,13 +397,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA96A92313CF626E007EC384 /* GTMDefines.h in Headers */,
+				AA96A97A13CF8E45007EC384 /* SGBaseFrameworkHeader.h in Headers */,
 				AA96A92413CF626E007EC384 /* GTMIPhoneUnitTestDelegate.h in Headers */,
 				AA96A92913CF626E007EC384 /* GTMObjectSingleton.h in Headers */,
 				AA96A92A13CF626E007EC384 /* GTMSenTestCase.h in Headers */,
 				AA96A93313CF65BB007EC384 /* SGSafeRelease.h in Headers */,
 				AA96A94013CF6801007EC384 /* SharedCLController.h in Headers */,
 				AA96A94C13CF812F007EC384 /* NSObject+Extensions.h in Headers */,
-				AA96A97A13CF8E45007EC384 /* SGBaseFrameworkHeader.h in Headers */,
 				AA96A98813CF92D7007EC384 /* SGDictionaryHelper.h in Headers */,
 				F5A030C413D031D80046A6DA /* GTMBase64.h in Headers */,
 				F5A030DD13D03C0E0046A6DA /* NSString+EMail.h in Headers */,
