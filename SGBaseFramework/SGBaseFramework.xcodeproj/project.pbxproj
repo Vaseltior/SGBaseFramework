@@ -60,6 +60,8 @@
 		AAFAF38513D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF38213D2ED770037EDD2 /* UncaughtExceptionHandler.m */; };
 		F5448E2B13D6E314000324D8 /* NSString_EmailTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5448E2A13D6E314000324D8 /* NSString_EmailTest.m */; };
 		F573A67F13D486BF006070A8 /* SGMathShortcuts.h in Headers */ = {isa = PBXBuildFile; fileRef = F573A67E13D486BF006070A8 /* SGMathShortcuts.h */; };
+		F59D3C7D141A05EE00C3E3A4 /* SGDHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F59D3C7B141A05EE00C3E3A4 /* SGDHelper.h */; };
+		F59D3C7E141A05EE00C3E3A4 /* SGDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F59D3C7C141A05EE00C3E3A4 /* SGDHelper.m */; };
 		F5A030C413D031D80046A6DA /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A030C213D031D80046A6DA /* GTMBase64.h */; };
 		F5A030C513D031D80046A6DA /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A030C313D031D80046A6DA /* GTMBase64.m */; };
 		F5A030DD13D03C0E0046A6DA /* NSString+EMail.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A030D913D03C0E0046A6DA /* NSString+EMail.h */; };
@@ -128,6 +130,8 @@
 		F5448E2913D6E314000324D8 /* NSString_EmailTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_EmailTest.h; sourceTree = "<group>"; };
 		F5448E2A13D6E314000324D8 /* NSString_EmailTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_EmailTest.m; sourceTree = "<group>"; };
 		F573A67E13D486BF006070A8 /* SGMathShortcuts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMathShortcuts.h; sourceTree = "<group>"; };
+		F59D3C7B141A05EE00C3E3A4 /* SGDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDHelper.h; sourceTree = "<group>"; };
+		F59D3C7C141A05EE00C3E3A4 /* SGDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDHelper.m; sourceTree = "<group>"; };
 		F5A030C213D031D80046A6DA /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		F5A030C313D031D80046A6DA /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		F5A030D913D03C0E0046A6DA /* NSString+EMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EMail.h"; sourceTree = "<group>"; };
@@ -341,6 +345,8 @@
 			children = (
 				AA96A98513CF92D7007EC384 /* SGDictionaryHelper.h */,
 				AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */,
+				F59D3C7B141A05EE00C3E3A4 /* SGDHelper.h */,
+				F59D3C7C141A05EE00C3E3A4 /* SGDHelper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -417,6 +423,7 @@
 				AAC2F2A713D23599009D4EE7 /* QLogViewer.h in Headers */,
 				F573A67F13D486BF006070A8 /* SGMathShortcuts.h in Headers */,
 				AAFAF38313D2ED770037EDD2 /* UncaughtExceptionHandler.h in Headers */,
+				F59D3C7D141A05EE00C3E3A4 /* SGDHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +540,7 @@
 				AAC2F2A513D23599009D4EE7 /* QLog.m in Sources */,
 				AAC2F2A813D23599009D4EE7 /* QLogViewer.m in Sources */,
 				AAFAF38413D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */,
+				F59D3C7E141A05EE00C3E3A4 /* SGDHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
