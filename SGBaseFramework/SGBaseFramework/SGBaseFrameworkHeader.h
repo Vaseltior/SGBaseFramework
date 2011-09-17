@@ -16,7 +16,7 @@
 #import "Classes/SGMathShortcuts.h"
 
 // Debug
-#import "Classes/UncaughtExceptionHandler.h"
+//#import "Classes/UncaughtExceptionHandler.h"
 
 // GoogleToolboxForMac
 #import "Classes/GoogleToolkitForMac/GTMObjectSingleton.h"
