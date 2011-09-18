@@ -26,4 +26,9 @@
      expectedType:(Class)aClass 
   andDefaultValue:(id)defaultValue;
 
++ (id)vfk:(id)key 
+     idic:(NSDictionary *)aDict 
+       et:(Class)aClass 
+       dv:(id)defaultValue;
+
 @end

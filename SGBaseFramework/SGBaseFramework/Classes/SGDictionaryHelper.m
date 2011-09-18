@@ -46,4 +46,12 @@
     return value;
 }
 
++ (id)vfk:(id)key 
+     idic:(NSDictionary *)aDict 
+       et:(Class)aClass 
+       dv:(id)defaultValue {
+    return [SGDictionaryHelper valueForKey:key inDictionary:aDict expectedType:aClass andDefaultValue:defaultValue];
+}
+
+
 @end
