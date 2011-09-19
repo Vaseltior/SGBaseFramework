@@ -40,7 +40,7 @@
     id value = [aDict objectForKey:key];
     if (!value) return defaultValue;
     if (![value isKindOfClass:aClass]) {
-        NSLog(@"%@ %@", aClass, [value class]);
+        //NSLog(@"%@ %@", aClass, [value class]);
         return defaultValue;   
     }
     return value;
