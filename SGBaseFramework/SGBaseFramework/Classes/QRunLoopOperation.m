@@ -120,8 +120,8 @@ XXX  7. init -> start -> cancel -> startOnRunLoopThreadThread -> cancelOnRunLoop
 
 // read/write versions of public properties
 
-@property (assign, readwrite) QRunLoopOperationState    state;
-@property (copy,   readwrite) NSError *                 error;          
+@property (nonatomic, assign, readwrite) QRunLoopOperationState state;
+@property (nonatomic, copy, readwrite) NSError * error;
 
 @end
 

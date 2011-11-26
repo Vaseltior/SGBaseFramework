@@ -9,9 +9,6 @@
 #ifndef SGBaseFramework_SGBaseFrameworkHeader_h
 #define SGBaseFramework_SGBaseFrameworkHeader_h
 
-// Google
-#import "Classes/GoogleToolkitForMac/GTMBase64.h"
-
 // Mathematics
 #import "Classes/SGMathShortcuts.h"
 

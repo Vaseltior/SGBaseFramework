@@ -11,6 +11,9 @@
 		AA023B7E13D211030011C1DC /* NetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA023B7C13D211030011C1DC /* NetworkManager.h */; };
 		AA023B7F13D211030011C1DC /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA023B7D13D211030011C1DC /* NetworkManager.m */; };
 		AA023B8013D211030011C1DC /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA023B7D13D211030011C1DC /* NetworkManager.m */; };
+		AA3B668D1426C661004B1DE6 /* SGCTHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3B668B1426C661004B1DE6 /* SGCTHelper.h */; };
+		AA3B668E1426C661004B1DE6 /* SGCTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3B668C1426C661004B1DE6 /* SGCTHelper.m */; };
+		AA3B668F1426C661004B1DE6 /* SGCTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3B668C1426C661004B1DE6 /* SGCTHelper.m */; };
 		AA96A8EF13CF5FA4007EC384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8EE13CF5FA4007EC384 /* Foundation.framework */; };
 		AA96A8FA13CF5FA5007EC384 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8F913CF5FA5007EC384 /* SenTestingKit.framework */; };
 		AA96A8FD13CF5FA5007EC384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96A8EE13CF5FA4007EC384 /* Foundation.framework */; };
@@ -87,6 +90,8 @@
 		AA023A4513D1882C0011C1DC /* SGCoreApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCoreApplication.h; sourceTree = "<group>"; };
 		AA023B7C13D211030011C1DC /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		AA023B7D13D211030011C1DC /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		AA3B668B1426C661004B1DE6 /* SGCTHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCTHelper.h; sourceTree = "<group>"; };
+		AA3B668C1426C661004B1DE6 /* SGCTHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCTHelper.m; sourceTree = "<group>"; };
 		AA96A8EB13CF5FA4007EC384 /* libSGBaseFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSGBaseFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA96A8EE13CF5FA4007EC384 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA96A8F213CF5FA4007EC384 /* SGBaseFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SGBaseFramework-Prefix.pch"; sourceTree = "<group>"; };
@@ -193,6 +198,15 @@
 			name = Operations;
 			sourceTree = "<group>";
 		};
+		AA3B668A1426C5E2004B1DE6 /* CoreText */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B668B1426C661004B1DE6 /* SGCTHelper.h */,
+				AA3B668C1426C661004B1DE6 /* SGCTHelper.m */,
+			);
+			name = CoreText;
+			sourceTree = "<group>";
+		};
 		AA96A8E013CF5FA4007EC384 = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +281,8 @@
 		AA96A91A13CF626E007EC384 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AAE314281481023A004D2ACD /* Core Data */,
+				AA3B668A1426C5E2004B1DE6 /* CoreText */,
 				F5448E2913D6E314000324D8 /* NSString_EmailTest.h */,
 				F5448E2A13D6E314000324D8 /* NSString_EmailTest.m */,
 				F573A67C13D48697006070A8 /* Mathematics */,
@@ -358,6 +374,13 @@
 			path = Three20Inheritance;
 			sourceTree = "<group>";
 		};
+		AAE314281481023A004D2ACD /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
 		AAFAF38713D2ED7B0037EDD2 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,6 +447,7 @@
 				F573A67F13D486BF006070A8 /* SGMathShortcuts.h in Headers */,
 				AAFAF38313D2ED770037EDD2 /* UncaughtExceptionHandler.h in Headers */,
 				F59D3C7D141A05EE00C3E3A4 /* SGDHelper.h in Headers */,
+				AA3B668D1426C661004B1DE6 /* SGCTHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +565,7 @@
 				AAC2F2A813D23599009D4EE7 /* QLogViewer.m in Sources */,
 				AAFAF38413D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */,
 				F59D3C7E141A05EE00C3E3A4 /* SGDHelper.m in Sources */,
+				AA3B668E1426C661004B1DE6 /* SGCTHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +589,7 @@
 				AAC2F2A913D23599009D4EE7 /* QLogViewer.m in Sources */,
 				F5448E2B13D6E314000324D8 /* NSString_EmailTest.m in Sources */,
 				AAFAF38513D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */,
+				AA3B668F1426C661004B1DE6 /* SGCTHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

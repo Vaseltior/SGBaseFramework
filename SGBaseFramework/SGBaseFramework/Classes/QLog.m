@@ -76,7 +76,7 @@
 
 // private properties
 
-@property (copy, readonly) NSString * pathToLogFile;
+@property (nonatomic, copy, readonly) NSString * pathToLogFile;
 
 // forward declarations
 
@@ -246,8 +246,11 @@
     
     newOptionsMask = 0;
     for (int i = 0; i < 32; i++) {
-        newOptionsMask |= [userDefaults boolForKey:[NSString stringWithFormat:@"qlogOption%d", i]] << i;
+        NSString * key = [NSString stringWithFormat:@"qlogOption%d", i];
+        BOOL udKeyValue = [userDefaults boolForKey:key];
+        newOptionsMask |=  ((NSUInteger)udKeyValue) << i;
     }
+    
     if (newOptionsMask != self->_optionsMask) {
         [self willChangeValueForKey:@"optionsMask"];
         self->_optionsMask = newOptionsMask;
@@ -480,7 +483,7 @@
                 }
                 bytesWritten = write(self->_logFile, &buf[bytesWrittenSoFar], bytesToWrite - bytesWrittenSoFar);
                 if (bytesWritten > 0) {
-                    bytesWrittenSoFar += bytesWritten;
+                    bytesWrittenSoFar += (NSUInteger)bytesWritten;
                 } else {
                     assert(bytesWritten != 0);
                     err = errno;

@@ -2,53 +2,6 @@
     File:       QHTTPOperation.h
 
     Contains:   An NSOperation that runs an HTTP request.
-
-    Written by: DTS
-
-    Copyright:  Copyright (c) 2010 Apple Inc. All Rights Reserved.
-
-    Disclaimer: IMPORTANT: This Apple software is supplied to you by Apple Inc.
-                ("Apple") in consideration of your agreement to the following
-                terms, and your use, installation, modification or
-                redistribution of this Apple software constitutes acceptance of
-                these terms.  If you do not agree with these terms, please do
-                not use, install, modify or redistribute this Apple software.
-
-                In consideration of your agreement to abide by the following
-                terms, and subject to these terms, Apple grants you a personal,
-                non-exclusive license, under Apple's copyrights in this
-                original Apple software (the "Apple Software"), to use,
-                reproduce, modify and redistribute the Apple Software, with or
-                without modifications, in source and/or binary forms; provided
-                that if you redistribute the Apple Software in its entirety and
-                without modifications, you must retain this notice and the
-                following text and disclaimers in all such redistributions of
-                the Apple Software. Neither the name, trademarks, service marks
-                or logos of Apple Inc. may be used to endorse or promote
-                products derived from the Apple Software without specific prior
-                written permission from Apple.  Except as expressly stated in
-                this notice, no other rights or licenses, express or implied,
-                are granted by Apple herein, including but not limited to any
-                patent rights that may be infringed by your derivative works or
-                by other works in which the Apple Software may be incorporated.
-
-                The Apple Software is provided by Apple on an "AS IS" basis. 
-                APPLE MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING
-                WITHOUT LIMITATION THE IMPLIED WARRANTIES OF NON-INFRINGEMENT,
-                MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, REGARDING
-                THE APPLE SOFTWARE OR ITS USE AND OPERATION ALONE OR IN
-                COMBINATION WITH YOUR PRODUCTS.
-
-                IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT,
-                INCIDENTAL OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
-                TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-                DATA, OR PROFITS; OR BUSINESS INTERRUPTION) ARISING IN ANY WAY
-                OUT OF THE USE, REPRODUCTION, MODIFICATION AND/OR DISTRIBUTION
-                OF THE APPLE SOFTWARE, HOWEVER CAUSED AND WHETHER UNDER THEORY
-                OF CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR
-                OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE POSSIBILITY OF
-                SUCH DAMAGE.
-
 */
 
 #import "QRunLoopOperation.h"
@@ -130,24 +83,27 @@
 #endif
 }
 
-- (id)initWithRequest:(NSURLRequest *)request;      // designated
-- (id)initWithURL:(NSURL *)url;                     // convenience, calls +[NSURLRequest requestWithURL:]
+// designated
+- (id)initWithRequest:(NSURLRequest *)request;
+
+// convenience, calls +[NSURLRequest requestWithURL:]
+- (id)initWithURL:(NSURL *)url;
 
 // Things that are configured by the init method and can't be changed.
 
-@property (copy,   readonly)  NSURLRequest *        request;
-@property (copy,   readonly)  NSURL *               URL;
+@property (nonatomic, copy, readonly) NSURLRequest * request;
+@property (nonatomic, copy, readonly) NSURL * URL;
 
 // Things you can configure before queuing the operation.
 
 // runLoopThread and runLoopModes inherited from QRunLoopOperation
-@property (copy,   readwrite) NSIndexSet *          acceptableStatusCodes;  // default is nil, implying 200..299
-@property (copy,   readwrite) NSSet *               acceptableContentTypes; // default is nil, implying anything is acceptable
-@property (assign, readwrite) id<QHTTPOperationAuthenticationDelegate>  authenticationDelegate;
+@property (nonatomic, copy, readwrite) NSIndexSet * acceptableStatusCodes;  // default is nil, implying 200..299
+@property (nonatomic, copy, readwrite) NSSet * acceptableContentTypes; // default is nil, implying anything is acceptable
+@property (nonatomic, assign, readwrite) id<QHTTPOperationAuthenticationDelegate> authenticationDelegate;
 
 #if ! defined(NDEBUG)
-@property (copy,   readwrite) NSError *             debugError;             // default is nil
-@property (assign, readwrite) NSTimeInterval        debugDelay;             // default is none
+@property (nonatomic, copy, readwrite) NSError * debugError; // default is nil
+@property (nonatomic, assign, readwrite) NSTimeInterval debugDelay; // default is none
 #endif
 
 // Things you can configure up to the point where you start receiving data. 
@@ -160,23 +116,23 @@
 // stream synchronously.  This is fine for file and memory streams, but it would 
 // not work well for other types of streams (like a bound pair).
 
-@property (retain, readwrite) NSOutputStream *      responseOutputStream;   // defaults to nil, which puts response into responseBody
-@property (assign, readwrite) NSUInteger            defaultResponseSize;    // default is 1 MB, ignored if responseOutputStream is set
-@property (assign, readwrite) NSUInteger            maximumResponseSize;    // default is 4 MB, ignored if responseOutputStream is set
+@property (nonatomic, retain, readwrite) NSOutputStream *      responseOutputStream;   // defaults to nil, which puts response into responseBody
+@property (nonatomic, assign, readwrite) NSUInteger            defaultResponseSize;    // default is 1 MB, ignored if responseOutputStream is set
+@property (nonatomic, assign, readwrite) NSUInteger            maximumResponseSize;    // default is 4 MB, ignored if responseOutputStream is set
                                                                             // defaults are 1/4 of the above on embedded
 
 // Things that are only meaningful after a response has been received;
 
-@property (assign, readonly, getter=isStatusCodeAcceptable)  BOOL statusCodeAcceptable;
-@property (assign, readonly, getter=isContentTypeAcceptable) BOOL contentTypeAcceptable;
+@property (nonatomic, assign, readonly, getter=isStatusCodeAcceptable)  BOOL statusCodeAcceptable;
+@property (nonatomic, assign, readonly, getter=isContentTypeAcceptable) BOOL contentTypeAcceptable;
 
 // Things that are only meaningful after the operation is finished.
 
 // error property inherited from QRunLoopOperation
-@property (copy,   readonly)  NSURLRequest *        lastRequest;       
-@property (copy,   readonly)  NSHTTPURLResponse *   lastResponse;       
+@property (nonatomic, copy, readonly) NSURLRequest * lastRequest;       
+@property (nonatomic, copy, readonly) NSHTTPURLResponse * lastResponse;       
 
-@property (copy,   readonly)  NSData *              responseBody;   
+@property (nonatomic, copy, readonly) NSData * responseBody;   
 
 @end
 
