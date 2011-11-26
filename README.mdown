@@ -1,10 +1,12 @@
-SGBaseFrameworkorms
+SGBaseFramework
 ============
 SGBaseFramework is a framework.
 
 Features
 ============
 SGBaseFramework:
+- Memory :
+You'll find a convenient way to release safely objects
 
 Adding SGBaseFramework to your project
 ============
