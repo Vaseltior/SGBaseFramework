@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AA023A4613D1882C0011C1DC /* SGCoreApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = AA023A4513D1882C0011C1DC /* SGCoreApplication.h */; };
-		AA023B7E13D211030011C1DC /* NetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA023B7C13D211030011C1DC /* NetworkManager.h */; };
-		AA023B7F13D211030011C1DC /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA023B7D13D211030011C1DC /* NetworkManager.m */; };
-		AA023B8013D211030011C1DC /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA023B7D13D211030011C1DC /* NetworkManager.m */; };
+		AA023B7E13D211030011C1DC /* SGNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA023B7C13D211030011C1DC /* SGNetworkManager.h */; };
+		AA023B7F13D211030011C1DC /* SGNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA023B7D13D211030011C1DC /* SGNetworkManager.m */; };
+		AA023B8013D211030011C1DC /* SGNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA023B7D13D211030011C1DC /* SGNetworkManager.m */; };
 		AA3B668D1426C661004B1DE6 /* SGCTHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3B668B1426C661004B1DE6 /* SGCTHelper.h */; };
 		AA3B668E1426C661004B1DE6 /* SGCTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3B668C1426C661004B1DE6 /* SGCTHelper.m */; };
 		AA3B668F1426C661004B1DE6 /* SGCTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3B668C1426C661004B1DE6 /* SGCTHelper.m */; };
@@ -88,8 +88,8 @@
 /* Begin PBXFileReference section */
 		AA0239B813D17F7F0011C1DC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = /Users/vaseltior/Documents/Projets/GIT_Projects/SGBaseFramework/SGBaseFramework/SGBaseFrameworkTests/fr.lproj/InfoPlist.strings; sourceTree = "<absolute>"; };
 		AA023A4513D1882C0011C1DC /* SGCoreApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCoreApplication.h; sourceTree = "<group>"; };
-		AA023B7C13D211030011C1DC /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
-		AA023B7D13D211030011C1DC /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		AA023B7C13D211030011C1DC /* SGNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGNetworkManager.h; sourceTree = "<group>"; };
+		AA023B7D13D211030011C1DC /* SGNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGNetworkManager.m; sourceTree = "<group>"; };
 		AA3B668B1426C661004B1DE6 /* SGCTHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCTHelper.h; sourceTree = "<group>"; };
 		AA3B668C1426C661004B1DE6 /* SGCTHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCTHelper.m; sourceTree = "<group>"; };
 		AA96A8EB13CF5FA4007EC384 /* libSGBaseFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSGBaseFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,8 +192,8 @@
 				AAC2F29913D23558009D4EE7 /* QRunLoopOperation.m */,
 				AAC2F29313D23537009D4EE7 /* QHTTPOperation.h */,
 				AAC2F29413D23537009D4EE7 /* QHTTPOperation.m */,
-				AA023B7C13D211030011C1DC /* NetworkManager.h */,
-				AA023B7D13D211030011C1DC /* NetworkManager.m */,
+				AA023B7C13D211030011C1DC /* SGNetworkManager.h */,
+				AA023B7D13D211030011C1DC /* SGNetworkManager.m */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -281,8 +281,11 @@
 		AA96A91A13CF626E007EC384 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AA023B7213D20F8B0011C1DC /* Operations */,
+				AA96A93813CF65E1007EC384 /* Memory */,
 				AAE314281481023A004D2ACD /* Core Data */,
 				AA3B668A1426C5E2004B1DE6 /* CoreText */,
+				AA96A97E13CF9278007EC384 /* Helpers */,
 				F5448E2913D6E314000324D8 /* NSString_EmailTest.h */,
 				F5448E2A13D6E314000324D8 /* NSString_EmailTest.m */,
 				F573A67C13D48697006070A8 /* Mathematics */,
@@ -312,11 +315,8 @@
 			isa = PBXGroup;
 			children = (
 				AAFAF38713D2ED7B0037EDD2 /* Debug */,
-				AA023B7213D20F8B0011C1DC /* Operations */,
 				AA023A4413D1880B0011C1DC /* Application */,
-				AA96A97E13CF9278007EC384 /* Helpers */,
 				AA96A94913CF8114007EC384 /* Additions */,
-				AA96A93813CF65E1007EC384 /* Memory */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -438,7 +438,7 @@
 				F5A030DD13D03C0E0046A6DA /* NSString+EMail.h in Headers */,
 				F5A030E013D03C0E0046A6DA /* NSString+HTML.h in Headers */,
 				AA023A4613D1882C0011C1DC /* SGCoreApplication.h in Headers */,
-				AA023B7E13D211030011C1DC /* NetworkManager.h in Headers */,
+				AA023B7E13D211030011C1DC /* SGNetworkManager.h in Headers */,
 				AAC2F29513D23537009D4EE7 /* QHTTPOperation.h in Headers */,
 				AAC2F29A13D23558009D4EE7 /* QRunLoopOperation.h in Headers */,
 				AAC2F2A313D23599009D4EE7 /* Logging.h in Headers */,
@@ -558,7 +558,7 @@
 				F5A030C513D031D80046A6DA /* GTMBase64.m in Sources */,
 				F5A030DE13D03C0E0046A6DA /* NSString+EMail.m in Sources */,
 				F5A030E113D03C0E0046A6DA /* NSString+HTML.m in Sources */,
-				AA023B7F13D211030011C1DC /* NetworkManager.m in Sources */,
+				AA023B7F13D211030011C1DC /* SGNetworkManager.m in Sources */,
 				AAC2F29613D23537009D4EE7 /* QHTTPOperation.m in Sources */,
 				AAC2F29B13D23558009D4EE7 /* QRunLoopOperation.m in Sources */,
 				AAC2F2A513D23599009D4EE7 /* QLog.m in Sources */,
@@ -582,7 +582,7 @@
 				AA96A98713CF92D7007EC384 /* SGDictionaryHelper.m in Sources */,
 				F5A030DF13D03C0E0046A6DA /* NSString+EMail.m in Sources */,
 				F5A030E213D03C0E0046A6DA /* NSString+HTML.m in Sources */,
-				AA023B8013D211030011C1DC /* NetworkManager.m in Sources */,
+				AA023B8013D211030011C1DC /* SGNetworkManager.m in Sources */,
 				AAC2F29713D23537009D4EE7 /* QHTTPOperation.m in Sources */,
 				AAC2F29C13D23558009D4EE7 /* QRunLoopOperation.m in Sources */,
 				AAC2F2A613D23599009D4EE7 /* QLog.m in Sources */,

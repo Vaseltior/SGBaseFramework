@@ -38,6 +38,6 @@
 #import "Classes/SGDHelper.h"
 
 // Network
-#import "Classes/NetworkManager.h"
+#import "Classes/SGNetworkManager.h"
 
 #endif
