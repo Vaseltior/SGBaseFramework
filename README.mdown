@@ -1,12 +1,55 @@
 SGBaseFramework
 ============
-SGBaseFramework is a framework.
+SGBaseFramework is a "I don't want to write code everytime and I want to write less code for common operations" library.
 
 Features
 ============
 SGBaseFramework:
-- Memory :
-You'll find a convenient way to release safely objects
+
+- Memory : You'll find a convenient way to release safely objects
+  - sgReleaseSafely(&object) : will do a release followed by an affectation to nil.
+  - sgReleaseCFSafely(&object) : will do the same for CoreFoundation objects
+  - sgInvalidateTimer
+  - sgLocStr : Shorthand for getting localized strings
+
+- GameKit : SGSharedGK is a singleton class that will do most of the operations needed to work with the iOS GameCenter
+  - Authentication :
+      * - (void)authenticateLocalPlayer;
+      * - (void)registerForAuthenticationNotification;
+      * - (void)unregisterForAuthenticationNotification;
+      * - (void)authenticationChanged;
+  - Friends information :
+      * - (void)retrieveFriends;
+      * - (void)loadPlayerData:(NSArray *)identifiers;
+  - Scoring :
+      * - (void)reportScore:(int64_t)score forCategory:(NSString*)category;
+  - Leaderboard :
+      * - (void)showLeaderboard;
+      * - (void)leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController;
+      * - (void)retrieveTopTenScores;
+      * - (void)receiveMatchBestScores:(GKMatch*)match;
+      * - (void)loadCategoryTitles;
+  - Achievements :
+      * - (void)reportAchievementIdentifier:(NSString*)identifier percentComplete:(float)percent;
+      * - (void)loadAchievements;
+      * - (GKAchievement*)getAchievementForIdentifier:(NSString*)identifier;
+      * - (void)resetAchievements;
+      * - (void)showAchievements;
+      * - (void)achievementViewControllerDidFinish:(GKAchievementViewController *)viewController;
+
+- Helpers :
+  - Dictionary helper : in order to fetch in a clean way data from NSDictionary
+
+- Mathematics :
+  - High precision float comparison
+  - High precision double comparison
+  - Normalized random
+  - Bounded random
+
+- Categories :
+  - NSString+Email : Compliant to RFC-2822
+  - NSString+HTML : Right way to URL encode NSString
+
 
 Adding SGBaseFramework to your project
 ============
