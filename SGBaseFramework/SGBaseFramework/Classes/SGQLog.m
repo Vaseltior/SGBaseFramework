@@ -49,9 +49,9 @@
     // This is safe because sLog can never transition from not-nil to nil.
     
     if (sLog == nil) {
-        @synchronized ([QLog class]) {
+        @synchronized ([SGQLog class]) {
             if (sLog == nil) {
-                sLog = [[QLog alloc] init];
+                sLog = [[SGQLog alloc] init];
                 assert(sLog != nil);
             }
         }

@@ -2,6 +2,8 @@
     File:       NetworkManager.m
 
     Contains:   A singleton to manage the core network interactions.
+
+
 */
 
 #import "SGNetworkManager.h"
@@ -35,7 +37,7 @@
 
     if (sNetworkManager == nil) {
         @synchronized (self) {
-            sNetworkManager = [[NetworkManager alloc] init];
+            sNetworkManager = [[SGNetworkManager alloc] init];
             assert(sNetworkManager != nil);
         }
     }

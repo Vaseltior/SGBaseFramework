@@ -67,6 +67,9 @@
 		AAE3146A14815118004D2ACD /* RetryingHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE3146814815116004D2ACD /* RetryingHTTPOperation.h */; };
 		AAE3146B14815118004D2ACD /* RetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE3146914815117004D2ACD /* RetryingHTTPOperation.m */; };
 		AAE3146C14815118004D2ACD /* RetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE3146914815117004D2ACD /* RetryingHTTPOperation.m */; };
+		AAE3146F148152A5004D2ACD /* QReachabilityOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE3146D148152A3004D2ACD /* QReachabilityOperation.h */; };
+		AAE31470148152A5004D2ACD /* QReachabilityOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE3146E148152A3004D2ACD /* QReachabilityOperation.m */; };
+		AAE31471148152A5004D2ACD /* QReachabilityOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE3146E148152A3004D2ACD /* QReachabilityOperation.m */; };
 		AAFAF38313D2ED770037EDD2 /* UncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFAF38113D2ED770037EDD2 /* UncaughtExceptionHandler.h */; };
 		AAFAF38413D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF38213D2ED770037EDD2 /* UncaughtExceptionHandler.m */; };
 		AAFAF38513D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF38213D2ED770037EDD2 /* UncaughtExceptionHandler.m */; };
@@ -145,6 +148,8 @@
 		AAE31461148150D0004D2ACD /* SGCoreDataGrandCentralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCoreDataGrandCentralController.m; sourceTree = "<group>"; };
 		AAE3146814815116004D2ACD /* RetryingHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetryingHTTPOperation.h; sourceTree = "<group>"; };
 		AAE3146914815117004D2ACD /* RetryingHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetryingHTTPOperation.m; sourceTree = "<group>"; };
+		AAE3146D148152A3004D2ACD /* QReachabilityOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QReachabilityOperation.h; sourceTree = "<group>"; };
+		AAE3146E148152A3004D2ACD /* QReachabilityOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QReachabilityOperation.m; sourceTree = "<group>"; };
 		AAFAF38113D2ED770037EDD2 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		AAFAF38213D2ED770037EDD2 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		F5448E2913D6E314000324D8 /* NSString_EmailTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_EmailTest.h; sourceTree = "<group>"; };
@@ -197,6 +202,8 @@
 		AA023B7213D20F8B0011C1DC /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				AAE3146D148152A3004D2ACD /* QReachabilityOperation.h */,
+				AAE3146E148152A3004D2ACD /* QReachabilityOperation.m */,
 				AAE3146814815116004D2ACD /* RetryingHTTPOperation.h */,
 				AAE3146914815117004D2ACD /* RetryingHTTPOperation.m */,
 				AAC2F29D13D23598009D4EE7 /* Logging.h */,
@@ -472,6 +479,7 @@
 				AAE31462148150D0004D2ACD /* SGCoreDataController.h in Headers */,
 				AAE31465148150D0004D2ACD /* SGCoreDataGrandCentralController.h in Headers */,
 				AAE3146A14815118004D2ACD /* RetryingHTTPOperation.h in Headers */,
+				AAE3146F148152A5004D2ACD /* QReachabilityOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +601,7 @@
 				AAE31463148150D0004D2ACD /* SGCoreDataController.m in Sources */,
 				AAE31466148150D0004D2ACD /* SGCoreDataGrandCentralController.m in Sources */,
 				AAE3146B14815118004D2ACD /* RetryingHTTPOperation.m in Sources */,
+				AAE31470148152A5004D2ACD /* QReachabilityOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +629,7 @@
 				AAE31464148150D0004D2ACD /* SGCoreDataController.m in Sources */,
 				AAE31467148150D0004D2ACD /* SGCoreDataGrandCentralController.m in Sources */,
 				AAE3146C14815118004D2ACD /* RetryingHTTPOperation.m in Sources */,
+				AAE31471148152A5004D2ACD /* QReachabilityOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
