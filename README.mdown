@@ -6,6 +6,11 @@ Features
 ============
 SGBaseFramework:
 
+- CoreData : 
+  - Controller to do the job that is done in the original template file of an application using CoreData. 
+  Offering a way to use more than one store without difficulty
+  - A singleton handling all those stores
+
 - Memory : You'll find a convenient way to release safely objects
   - sgReleaseSafely(&object) : will do a release followed by an affectation to nil.
   - sgReleaseCFSafely(&object) : will do the same for CoreFoundation objects
