@@ -578,7 +578,7 @@ GTM_INLINE NSUInteger GuessDecodedLength(NSUInteger srcLen) {
     int state = 0;
     char ch = 0;
     while (srcLen-- && (ch = *srcBytes++) != 0)  {
-        if (IsSpace(ch))  // Skip whitespace
+        if (IsSpace((unsigned char)ch))  // Skip whitespace
             continue;
         
         if (ch == kBase64PaddingChar)
@@ -591,25 +591,31 @@ GTM_INLINE NSUInteger GuessDecodedLength(NSUInteger srcLen) {
         // Four cyphertext characters decode to three bytes.
         // Therefore we can be in one of four states.
         switch (state) {
-            case 0:
+            case 0: {
                 // We're at the beginning of a four-character cyphertext block.
                 // This sets the high six bits of the first byte of the
                 // plaintext block.
                 _GTMDevAssert(destIndex < destLen, @"our calc for decoded length was wrong");
-                destBytes[destIndex] = decode << 2;
+                int resultTemp = decode << 2;
+                destBytes[destIndex] = (char)resultTemp;
                 state = 1;
+            }
                 break;
-            case 1:
+                
+            case 1: {
                 // We're one character into a four-character cyphertext block.
                 // This sets the low two bits of the first plaintext byte,
                 // and the high four bits of the second plaintext byte.
                 _GTMDevAssert((destIndex+1) < destLen, @"our calc for decoded length was wrong");
                 destBytes[destIndex] |= decode >> 4;
-                destBytes[destIndex+1] = (decode & 0x0f) << 4;
+                int resultTemp = (decode & 0x0f) << 4;
+                destBytes[destIndex+1] = (char)resultTemp;
                 destIndex++;
                 state = 2;
+            }
                 break;
-            case 2:
+                
+            case 2: {
                 // We're two characters into a four-character cyphertext block.
                 // This sets the low four bits of the second plaintext
                 // byte, and the high two bits of the third plaintext byte.
@@ -619,10 +625,13 @@ GTM_INLINE NSUInteger GuessDecodedLength(NSUInteger srcLen) {
                 // of two mod three.
                 _GTMDevAssert((destIndex+1) < destLen, @"our calc for decoded length was wrong");
                 destBytes[destIndex] |= decode >> 2;
-                destBytes[destIndex+1] = (decode & 0x03) << 6;
+                int resultTemp = (decode & 0x03) << 6;
+                destBytes[destIndex+1] = (char)resultTemp;
                 destIndex++;
                 state = 3;
                 break;
+            }
+                
             case 3:
                 // We're at the last character of a four-character cyphertext block.
                 // This sets the low six bits of the third plaintext byte.
@@ -648,7 +657,7 @@ GTM_INLINE NSUInteger GuessDecodedLength(NSUInteger srcLen) {
         } else {
             if (state == 2) {  // need another '='
                 while ((ch = *srcBytes++) && (srcLen-- > 0)) {
-                    if (!IsSpace(ch))
+                    if (!IsSpace((unsigned char)ch))
                         break;
                 }
                 if (ch != kBase64PaddingChar) {
@@ -657,7 +666,7 @@ GTM_INLINE NSUInteger GuessDecodedLength(NSUInteger srcLen) {
             }
             // state = 1 or 2, check if all remain padding is space
             while ((ch = *srcBytes++) && (srcLen-- > 0)) {
-                if (!IsSpace(ch)) {
+                if (!IsSpace((unsigned char)ch)) {
                     return 0;
                 }
             }

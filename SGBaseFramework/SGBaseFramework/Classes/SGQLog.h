@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface QLog : NSObject
+@interface SGQLog : NSObject
 {
     BOOL                _enabled;                                               // main thread write, any thread read
     int                 _logFile;                                               // main thread write, any thread read
@@ -19,7 +19,7 @@
     NSMutableArray *    _pendingEntries;                                        // any thread, protected by @synchronize (self)
 }
 
-+ (QLog *)log;                                                                  // any thread
++ (SGQLog *)log;                                                                  // any thread
     // Returns the singleton logging object.
     
 - (void)flush;                                                                  // main thread only
