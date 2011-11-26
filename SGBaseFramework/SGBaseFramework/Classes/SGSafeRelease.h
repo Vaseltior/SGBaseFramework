@@ -28,6 +28,7 @@ static inline void sgReleaseSafely(NSObject **object) {
     *object = nil;
 }
 
+
 static inline void sgInvalidateTimer(NSObject **object) {
     if (!*object) return;
     NSTimer *t = (NSTimer *)object;
