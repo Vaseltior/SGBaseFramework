@@ -32,7 +32,7 @@ static inline void sgInvalidateTimer(NSObject **object) {
     if (!*object) return;
     NSTimer *t = (NSTimer *)object;
     [t invalidate];
-    *object = nil;
+    sgReleaseSafely(&t);
 }
 
 /**
