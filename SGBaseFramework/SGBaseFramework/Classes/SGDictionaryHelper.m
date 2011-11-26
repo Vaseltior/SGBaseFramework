@@ -21,16 +21,6 @@
 
 @implementation SGDictionaryHelper
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        // Initialization code here.
-    }
-    
-    return self;
-}
-
 + (id)valueForKey:(id)key 
      inDictionary:(NSDictionary *)aDict 
      expectedType:(Class)aClass 
@@ -40,7 +30,7 @@
     id value = [aDict objectForKey:key];
     if (!value) return defaultValue;
     if (![value isKindOfClass:aClass]) {
-        NSLog(@"%@ %@", aClass, [value class]);
+        //NSLog(@"%@ %@", aClass, [value class]);
         return defaultValue;   
     }
     return value;

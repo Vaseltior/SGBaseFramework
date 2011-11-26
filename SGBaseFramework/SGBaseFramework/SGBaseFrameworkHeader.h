@@ -37,7 +37,4 @@
 #import "Classes/SGDictionaryHelper.h"
 #import "Classes/SGDHelper.h"
 
-// Network
-#import "Classes/NetworkManager.h"
-
 #endif

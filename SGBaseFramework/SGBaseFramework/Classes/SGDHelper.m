@@ -12,15 +12,23 @@
 
 + (id)vfk:(id)key wd:(NSDictionary *)aDict et:(Class)aClass dv:(id)defaultValue {
     
-    if (nil == key) return defaultValue;
+    if (nil == key) { 
+        return defaultValue; 
+    }
+    
     id value = [aDict objectForKey:key];
-    if (!value) return defaultValue;
+    
+    if (!value) {
+        return defaultValue;
+    }
+    
     if (![value isKindOfClass:aClass]) {
-        NSLog(@"%@ %@", aClass, [value class]);
         return defaultValue;   
     }
+    
     return value;
 }
 
 
 @end
+

@@ -44,18 +44,10 @@
 		AA96A98713CF92D7007EC384 /* SGDictionaryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96A98413CF92D7007EC384 /* SGDictionaryHelper.m */; };
 		AA96A98813CF92D7007EC384 /* SGDictionaryHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA96A98513CF92D7007EC384 /* SGDictionaryHelper.h */; };
 		AAC2F29513D23537009D4EE7 /* QHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F29313D23537009D4EE7 /* QHTTPOperation.h */; };
-		AAC2F29613D23537009D4EE7 /* QHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29413D23537009D4EE7 /* QHTTPOperation.m */; };
-		AAC2F29713D23537009D4EE7 /* QHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29413D23537009D4EE7 /* QHTTPOperation.m */; };
 		AAC2F29A13D23558009D4EE7 /* QRunLoopOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F29813D23558009D4EE7 /* QRunLoopOperation.h */; };
-		AAC2F29B13D23558009D4EE7 /* QRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29913D23558009D4EE7 /* QRunLoopOperation.m */; };
-		AAC2F29C13D23558009D4EE7 /* QRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29913D23558009D4EE7 /* QRunLoopOperation.m */; };
 		AAC2F2A313D23599009D4EE7 /* Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F29D13D23598009D4EE7 /* Logging.h */; };
 		AAC2F2A413D23599009D4EE7 /* QLog.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F29E13D23599009D4EE7 /* QLog.h */; };
-		AAC2F2A513D23599009D4EE7 /* QLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29F13D23599009D4EE7 /* QLog.m */; };
-		AAC2F2A613D23599009D4EE7 /* QLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29F13D23599009D4EE7 /* QLog.m */; };
 		AAC2F2A713D23599009D4EE7 /* QLogViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F2A013D23599009D4EE7 /* QLogViewer.h */; };
-		AAC2F2A813D23599009D4EE7 /* QLogViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F2A113D23599009D4EE7 /* QLogViewer.m */; };
-		AAC2F2A913D23599009D4EE7 /* QLogViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F2A113D23599009D4EE7 /* QLogViewer.m */; };
 		AAC2F2AA13D23599009D4EE7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAC2F2A213D23599009D4EE7 /* Settings.bundle */; };
 		AAC2F2AC13D2365F009D4EE7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC2F2AB13D2365F009D4EE7 /* libz.dylib */; };
 		AAFAF38313D2ED770037EDD2 /* UncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFAF38113D2ED770037EDD2 /* UncaughtExceptionHandler.h */; };
@@ -558,11 +550,6 @@
 				F5A030C513D031D80046A6DA /* GTMBase64.m in Sources */,
 				F5A030DE13D03C0E0046A6DA /* NSString+EMail.m in Sources */,
 				F5A030E113D03C0E0046A6DA /* NSString+HTML.m in Sources */,
-				AA023B7F13D211030011C1DC /* NetworkManager.m in Sources */,
-				AAC2F29613D23537009D4EE7 /* QHTTPOperation.m in Sources */,
-				AAC2F29B13D23558009D4EE7 /* QRunLoopOperation.m in Sources */,
-				AAC2F2A513D23599009D4EE7 /* QLog.m in Sources */,
-				AAC2F2A813D23599009D4EE7 /* QLogViewer.m in Sources */,
 				AAFAF38413D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */,
 				F59D3C7E141A05EE00C3E3A4 /* SGDHelper.m in Sources */,
 				AA3B668E1426C661004B1DE6 /* SGCTHelper.m in Sources */,
@@ -582,11 +569,6 @@
 				AA96A98713CF92D7007EC384 /* SGDictionaryHelper.m in Sources */,
 				F5A030DF13D03C0E0046A6DA /* NSString+EMail.m in Sources */,
 				F5A030E213D03C0E0046A6DA /* NSString+HTML.m in Sources */,
-				AA023B8013D211030011C1DC /* NetworkManager.m in Sources */,
-				AAC2F29713D23537009D4EE7 /* QHTTPOperation.m in Sources */,
-				AAC2F29C13D23558009D4EE7 /* QRunLoopOperation.m in Sources */,
-				AAC2F2A613D23599009D4EE7 /* QLog.m in Sources */,
-				AAC2F2A913D23599009D4EE7 /* QLogViewer.m in Sources */,
 				F5448E2B13D6E314000324D8 /* NSString_EmailTest.m in Sources */,
 				AAFAF38513D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */,
 				AA3B668F1426C661004B1DE6 /* SGCTHelper.m in Sources */,
@@ -649,6 +631,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
