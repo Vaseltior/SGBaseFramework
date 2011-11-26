@@ -66,6 +66,10 @@
 		AAE3146F148152A5004D2ACD /* QReachabilityOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE3146D148152A3004D2ACD /* QReachabilityOperation.h */; };
 		AAE31470148152A5004D2ACD /* QReachabilityOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE3146E148152A3004D2ACD /* QReachabilityOperation.m */; };
 		AAE31471148152A5004D2ACD /* QReachabilityOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE3146E148152A3004D2ACD /* QReachabilityOperation.m */; };
+		AAE3152E1481564C004D2ACD /* QRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29913D23558009D4EE7 /* QRunLoopOperation.m */; };
+		AAE315301481564E004D2ACD /* QRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29913D23558009D4EE7 /* QRunLoopOperation.m */; };
+		AAE3153114815658004D2ACD /* QHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29413D23537009D4EE7 /* QHTTPOperation.m */; };
+		AAE3153214815659004D2ACD /* QHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29413D23537009D4EE7 /* QHTTPOperation.m */; };
 		AAFAF38313D2ED770037EDD2 /* UncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFAF38113D2ED770037EDD2 /* UncaughtExceptionHandler.h */; };
 		AAFAF38413D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF38213D2ED770037EDD2 /* UncaughtExceptionHandler.m */; };
 		AAFAF38513D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF38213D2ED770037EDD2 /* UncaughtExceptionHandler.m */; };
@@ -587,8 +591,6 @@
 				F5A030DE13D03C0E0046A6DA /* NSString+EMail.m in Sources */,
 				F5A030E113D03C0E0046A6DA /* NSString+HTML.m in Sources */,
 				AA023B7F13D211030011C1DC /* SGNetworkManager.m in Sources */,
-				AAC2F29613D23537009D4EE7 /* QHTTPOperation.m in Sources */,
-				AAC2F29B13D23558009D4EE7 /* QRunLoopOperation.m in Sources */,
 				AAC2F2A513D23599009D4EE7 /* SGQLog.m in Sources */,
 				AAC2F2A813D23599009D4EE7 /* SGQLogViewer.m in Sources */,
 				AAFAF38413D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */,
@@ -598,6 +600,8 @@
 				AAE31466148150D0004D2ACD /* SGCoreDataGrandCentralController.m in Sources */,
 				AAE3146B14815118004D2ACD /* RetryingHTTPOperation.m in Sources */,
 				AAE31470148152A5004D2ACD /* QReachabilityOperation.m in Sources */,
+				AAE3152E1481564C004D2ACD /* QRunLoopOperation.m in Sources */,
+				AAE3153114815658004D2ACD /* QHTTPOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,8 +619,6 @@
 				F5A030DF13D03C0E0046A6DA /* NSString+EMail.m in Sources */,
 				F5A030E213D03C0E0046A6DA /* NSString+HTML.m in Sources */,
 				AA023B8013D211030011C1DC /* SGNetworkManager.m in Sources */,
-				AAC2F29713D23537009D4EE7 /* QHTTPOperation.m in Sources */,
-				AAC2F29C13D23558009D4EE7 /* QRunLoopOperation.m in Sources */,
 				AAC2F2A613D23599009D4EE7 /* SGQLog.m in Sources */,
 				AAC2F2A913D23599009D4EE7 /* SGQLogViewer.m in Sources */,
 				F5448E2B13D6E314000324D8 /* NSString_EmailTest.m in Sources */,
@@ -626,6 +628,8 @@
 				AAE31467148150D0004D2ACD /* SGCoreDataGrandCentralController.m in Sources */,
 				AAE3146C14815118004D2ACD /* RetryingHTTPOperation.m in Sources */,
 				AAE31471148152A5004D2ACD /* QReachabilityOperation.m in Sources */,
+				AAE315301481564E004D2ACD /* QRunLoopOperation.m in Sources */,
+				AAE3153214815659004D2ACD /* QHTTPOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
