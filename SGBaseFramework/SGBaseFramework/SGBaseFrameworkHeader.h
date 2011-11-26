@@ -39,5 +39,11 @@
 
 // Network
 #import "Classes/SGNetworkManager.h"
+#import "Classes/QHTTPOperation.h"
+#import "Classes/RetryingHTTPOperation.h"
+
+// CoreData
+#import "Classes/SGCoreDataController.h"
+#import "Classes/SGCoreDataGrandCentralController.h"
 
 #endif

@@ -4,15 +4,15 @@
     Contains:   Displays in-memory QLog entries, with options to copy and mail the log.
 */
 
-#import "QLogViewer.h"
+#import "SGQLogViewer.h"
 
-#import "QLog.h"
+#import "SGQLog.h"
 
 #import <MessageUI/MessageUI.h>
 
 #include "zlib.h"
 
-@interface QLogViewer () <UIActionSheetDelegate, UIAlertViewDelegate, MFMailComposeViewControllerDelegate>
+@interface SGQLogViewer () <UIActionSheetDelegate, UIAlertViewDelegate, MFMailComposeViewControllerDelegate>
 
 // private properties
 
@@ -25,13 +25,13 @@
 
 @end
 
-@implementation QLogViewer
+@implementation SGQLogViewer
 
 - (id)init
 {
     self = [super initWithStyle:UITableViewStylePlain];
     if (self != nil) {
-        [[QLog log] addObserver:self forKeyPath:@"logEntries" options:0 context:&self->_logEntriesDummy];
+        [[SGQLog log] addObserver:self forKeyPath:@"logEntries" options:0 context:&self->_logEntriesDummy];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willResignActive:) name:UIApplicationWillResignActiveNotification object:nil];
     }
     // You can enable the following to test how the QLog subsystem responds to entries being added; 
@@ -44,7 +44,7 @@
 
 - (void)dealloc
 {
-    [[QLog log] removeObserver:self forKeyPath:@"logEntries"];
+    [[SGQLog log] removeObserver:self forKeyPath:@"logEntries"];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillResignActiveNotification object:nil];
     assert(self->_actionSheet == nil);          // should be gone at this point
     assert(self->_alertView == nil);            // should be gone at this point
@@ -106,7 +106,7 @@
         // Respond to changes in the logEntries property of the QLog.
     
         assert([keyPath isEqual:@"logEntries"]);
-        assert(object = [QLog log]);
+        assert(object = [SGQLog log]);
         assert(change != nil);
 
         if (self.isViewLoaded) {
@@ -152,7 +152,7 @@
     assert(tv == self.tableView);
     assert(section == 0);
 
-    return (NSInteger)[[QLog log].logEntries count];
+    return (NSInteger)[[SGQLog log].logEntries count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -164,7 +164,7 @@
     assert(tv == self.tableView);
     assert(indexPath != NULL);
     assert(indexPath.section == 0);
-    assert(indexPath.row < (NSInteger)[[QLog log].logEntries count]);
+    assert(indexPath.row < (NSInteger)[[SGQLog log].logEntries count]);
 
     cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (cell == nil) {
@@ -180,7 +180,7 @@
         //
         // cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    cell.textLabel.text = [[QLog log].logEntries objectAtIndex:(NSUInteger)indexPath.row];
+    cell.textLabel.text = [[SGQLog log].logEntries objectAtIndex:(NSUInteger)indexPath.row];
 
     return cell;
 }
@@ -243,7 +243,7 @@ static BOOL gzwrite_all(gzFile file, const uint8_t * buffer, size_t bytesToWrite
     compressedLogPath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"CompressedLog.gz"];
     assert(compressedLogPath != NULL);
     
-    logStream = [[QLog log] streamForLogValidToLength:&logStreamLength];
+    logStream = [[SGQLog log] streamForLogValidToLength:&logStreamLength];
     success = (logStream != nil);
     
     if (success) {
@@ -310,7 +310,7 @@ static BOOL gzwrite_all(gzFile file, const uint8_t * buffer, size_t bytesToWrite
     
     // Get a stream to the log data.
     
-    logStream = [[QLog log] streamForLogValidToLength:&logStreamLength];
+    logStream = [[SGQLog log] streamForLogValidToLength:&logStreamLength];
     success = (logStream != nil);
     
     // Read the stream and write it to stderr.
@@ -434,7 +434,7 @@ enum {
             
             // The user tapped Copy; serialise the log to the pasteboard.
             
-            logString = [[QLog log].logEntries componentsJoinedByString:@"\n"];
+            logString = [[SGQLog log].logEntries componentsJoinedByString:@"\n"];
             assert(logString != nil);
             
             [UIPasteboard generalPasteboard].string = logString;
@@ -495,7 +495,7 @@ enum {
     // yicky, but I'll live.
     
     if (buttonIndex != self.alertView.cancelButtonIndex) {
-        [[QLog log] clear];
+        [[SGQLog log] clear];
     }
     
     self.alertView = nil;
@@ -536,7 +536,7 @@ enum {
     static int sLogNumber;
     
     sLogNumber += 1;
-    [[QLog log] logWithFormat:@"debugAddLogEntry blah blah blah %d", sLogNumber];
+    [[SGQLog log] logWithFormat:@"debugAddLogEntry blah blah blah %d", sLogNumber];
 }
 
 @end

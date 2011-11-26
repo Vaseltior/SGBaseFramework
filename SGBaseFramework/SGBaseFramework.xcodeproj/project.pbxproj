@@ -50,14 +50,23 @@
 		AAC2F29B13D23558009D4EE7 /* QRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29913D23558009D4EE7 /* QRunLoopOperation.m */; };
 		AAC2F29C13D23558009D4EE7 /* QRunLoopOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29913D23558009D4EE7 /* QRunLoopOperation.m */; };
 		AAC2F2A313D23599009D4EE7 /* Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F29D13D23598009D4EE7 /* Logging.h */; };
-		AAC2F2A413D23599009D4EE7 /* QLog.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F29E13D23599009D4EE7 /* QLog.h */; };
-		AAC2F2A513D23599009D4EE7 /* QLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29F13D23599009D4EE7 /* QLog.m */; };
-		AAC2F2A613D23599009D4EE7 /* QLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29F13D23599009D4EE7 /* QLog.m */; };
-		AAC2F2A713D23599009D4EE7 /* QLogViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F2A013D23599009D4EE7 /* QLogViewer.h */; };
-		AAC2F2A813D23599009D4EE7 /* QLogViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F2A113D23599009D4EE7 /* QLogViewer.m */; };
-		AAC2F2A913D23599009D4EE7 /* QLogViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F2A113D23599009D4EE7 /* QLogViewer.m */; };
+		AAC2F2A413D23599009D4EE7 /* SGQLog.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F29E13D23599009D4EE7 /* SGQLog.h */; };
+		AAC2F2A513D23599009D4EE7 /* SGQLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29F13D23599009D4EE7 /* SGQLog.m */; };
+		AAC2F2A613D23599009D4EE7 /* SGQLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F29F13D23599009D4EE7 /* SGQLog.m */; };
+		AAC2F2A713D23599009D4EE7 /* SGQLogViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC2F2A013D23599009D4EE7 /* SGQLogViewer.h */; };
+		AAC2F2A813D23599009D4EE7 /* SGQLogViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F2A113D23599009D4EE7 /* SGQLogViewer.m */; };
+		AAC2F2A913D23599009D4EE7 /* SGQLogViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2F2A113D23599009D4EE7 /* SGQLogViewer.m */; };
 		AAC2F2AA13D23599009D4EE7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAC2F2A213D23599009D4EE7 /* Settings.bundle */; };
 		AAC2F2AC13D2365F009D4EE7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC2F2AB13D2365F009D4EE7 /* libz.dylib */; };
+		AAE31462148150D0004D2ACD /* SGCoreDataController.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE3145E148150D0004D2ACD /* SGCoreDataController.h */; };
+		AAE31463148150D0004D2ACD /* SGCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE3145F148150D0004D2ACD /* SGCoreDataController.m */; };
+		AAE31464148150D0004D2ACD /* SGCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE3145F148150D0004D2ACD /* SGCoreDataController.m */; };
+		AAE31465148150D0004D2ACD /* SGCoreDataGrandCentralController.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE31460148150D0004D2ACD /* SGCoreDataGrandCentralController.h */; };
+		AAE31466148150D0004D2ACD /* SGCoreDataGrandCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE31461148150D0004D2ACD /* SGCoreDataGrandCentralController.m */; };
+		AAE31467148150D0004D2ACD /* SGCoreDataGrandCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE31461148150D0004D2ACD /* SGCoreDataGrandCentralController.m */; };
+		AAE3146A14815118004D2ACD /* RetryingHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE3146814815116004D2ACD /* RetryingHTTPOperation.h */; };
+		AAE3146B14815118004D2ACD /* RetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE3146914815117004D2ACD /* RetryingHTTPOperation.m */; };
+		AAE3146C14815118004D2ACD /* RetryingHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE3146914815117004D2ACD /* RetryingHTTPOperation.m */; };
 		AAFAF38313D2ED770037EDD2 /* UncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFAF38113D2ED770037EDD2 /* UncaughtExceptionHandler.h */; };
 		AAFAF38413D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF38213D2ED770037EDD2 /* UncaughtExceptionHandler.m */; };
 		AAFAF38513D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFAF38213D2ED770037EDD2 /* UncaughtExceptionHandler.m */; };
@@ -124,12 +133,18 @@
 		AAC2F29813D23558009D4EE7 /* QRunLoopOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRunLoopOperation.h; sourceTree = "<group>"; };
 		AAC2F29913D23558009D4EE7 /* QRunLoopOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRunLoopOperation.m; sourceTree = "<group>"; };
 		AAC2F29D13D23598009D4EE7 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
-		AAC2F29E13D23599009D4EE7 /* QLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLog.h; sourceTree = "<group>"; };
-		AAC2F29F13D23599009D4EE7 /* QLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLog.m; sourceTree = "<group>"; };
-		AAC2F2A013D23599009D4EE7 /* QLogViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLogViewer.h; sourceTree = "<group>"; };
-		AAC2F2A113D23599009D4EE7 /* QLogViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLogViewer.m; sourceTree = "<group>"; };
+		AAC2F29E13D23599009D4EE7 /* SGQLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQLog.h; sourceTree = "<group>"; };
+		AAC2F29F13D23599009D4EE7 /* SGQLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQLog.m; sourceTree = "<group>"; };
+		AAC2F2A013D23599009D4EE7 /* SGQLogViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQLogViewer.h; sourceTree = "<group>"; };
+		AAC2F2A113D23599009D4EE7 /* SGQLogViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQLogViewer.m; sourceTree = "<group>"; };
 		AAC2F2A213D23599009D4EE7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		AAC2F2AB13D2365F009D4EE7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AAE3145E148150D0004D2ACD /* SGCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCoreDataController.h; sourceTree = "<group>"; };
+		AAE3145F148150D0004D2ACD /* SGCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCoreDataController.m; sourceTree = "<group>"; };
+		AAE31460148150D0004D2ACD /* SGCoreDataGrandCentralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCoreDataGrandCentralController.h; sourceTree = "<group>"; };
+		AAE31461148150D0004D2ACD /* SGCoreDataGrandCentralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCoreDataGrandCentralController.m; sourceTree = "<group>"; };
+		AAE3146814815116004D2ACD /* RetryingHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetryingHTTPOperation.h; sourceTree = "<group>"; };
+		AAE3146914815117004D2ACD /* RetryingHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetryingHTTPOperation.m; sourceTree = "<group>"; };
 		AAFAF38113D2ED770037EDD2 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		AAFAF38213D2ED770037EDD2 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		F5448E2913D6E314000324D8 /* NSString_EmailTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_EmailTest.h; sourceTree = "<group>"; };
@@ -182,11 +197,13 @@
 		AA023B7213D20F8B0011C1DC /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				AAE3146814815116004D2ACD /* RetryingHTTPOperation.h */,
+				AAE3146914815117004D2ACD /* RetryingHTTPOperation.m */,
 				AAC2F29D13D23598009D4EE7 /* Logging.h */,
-				AAC2F29E13D23599009D4EE7 /* QLog.h */,
-				AAC2F29F13D23599009D4EE7 /* QLog.m */,
-				AAC2F2A013D23599009D4EE7 /* QLogViewer.h */,
-				AAC2F2A113D23599009D4EE7 /* QLogViewer.m */,
+				AAC2F29E13D23599009D4EE7 /* SGQLog.h */,
+				AAC2F29F13D23599009D4EE7 /* SGQLog.m */,
+				AAC2F2A013D23599009D4EE7 /* SGQLogViewer.h */,
+				AAC2F2A113D23599009D4EE7 /* SGQLogViewer.m */,
 				AAC2F2A213D23599009D4EE7 /* Settings.bundle */,
 				AAC2F29813D23558009D4EE7 /* QRunLoopOperation.h */,
 				AAC2F29913D23558009D4EE7 /* QRunLoopOperation.m */,
@@ -377,6 +394,10 @@
 		AAE314281481023A004D2ACD /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				AAE3145E148150D0004D2ACD /* SGCoreDataController.h */,
+				AAE3145F148150D0004D2ACD /* SGCoreDataController.m */,
+				AAE31460148150D0004D2ACD /* SGCoreDataGrandCentralController.h */,
+				AAE31461148150D0004D2ACD /* SGCoreDataGrandCentralController.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -442,12 +463,15 @@
 				AAC2F29513D23537009D4EE7 /* QHTTPOperation.h in Headers */,
 				AAC2F29A13D23558009D4EE7 /* QRunLoopOperation.h in Headers */,
 				AAC2F2A313D23599009D4EE7 /* Logging.h in Headers */,
-				AAC2F2A413D23599009D4EE7 /* QLog.h in Headers */,
-				AAC2F2A713D23599009D4EE7 /* QLogViewer.h in Headers */,
+				AAC2F2A413D23599009D4EE7 /* SGQLog.h in Headers */,
+				AAC2F2A713D23599009D4EE7 /* SGQLogViewer.h in Headers */,
 				F573A67F13D486BF006070A8 /* SGMathShortcuts.h in Headers */,
 				AAFAF38313D2ED770037EDD2 /* UncaughtExceptionHandler.h in Headers */,
 				F59D3C7D141A05EE00C3E3A4 /* SGDHelper.h in Headers */,
 				AA3B668D1426C661004B1DE6 /* SGCTHelper.h in Headers */,
+				AAE31462148150D0004D2ACD /* SGCoreDataController.h in Headers */,
+				AAE31465148150D0004D2ACD /* SGCoreDataGrandCentralController.h in Headers */,
+				AAE3146A14815118004D2ACD /* RetryingHTTPOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,11 +585,14 @@
 				AA023B7F13D211030011C1DC /* SGNetworkManager.m in Sources */,
 				AAC2F29613D23537009D4EE7 /* QHTTPOperation.m in Sources */,
 				AAC2F29B13D23558009D4EE7 /* QRunLoopOperation.m in Sources */,
-				AAC2F2A513D23599009D4EE7 /* QLog.m in Sources */,
-				AAC2F2A813D23599009D4EE7 /* QLogViewer.m in Sources */,
+				AAC2F2A513D23599009D4EE7 /* SGQLog.m in Sources */,
+				AAC2F2A813D23599009D4EE7 /* SGQLogViewer.m in Sources */,
 				AAFAF38413D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */,
 				F59D3C7E141A05EE00C3E3A4 /* SGDHelper.m in Sources */,
 				AA3B668E1426C661004B1DE6 /* SGCTHelper.m in Sources */,
+				AAE31463148150D0004D2ACD /* SGCoreDataController.m in Sources */,
+				AAE31466148150D0004D2ACD /* SGCoreDataGrandCentralController.m in Sources */,
+				AAE3146B14815118004D2ACD /* RetryingHTTPOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,11 +612,14 @@
 				AA023B8013D211030011C1DC /* SGNetworkManager.m in Sources */,
 				AAC2F29713D23537009D4EE7 /* QHTTPOperation.m in Sources */,
 				AAC2F29C13D23558009D4EE7 /* QRunLoopOperation.m in Sources */,
-				AAC2F2A613D23599009D4EE7 /* QLog.m in Sources */,
-				AAC2F2A913D23599009D4EE7 /* QLogViewer.m in Sources */,
+				AAC2F2A613D23599009D4EE7 /* SGQLog.m in Sources */,
+				AAC2F2A913D23599009D4EE7 /* SGQLogViewer.m in Sources */,
 				F5448E2B13D6E314000324D8 /* NSString_EmailTest.m in Sources */,
 				AAFAF38513D2ED770037EDD2 /* UncaughtExceptionHandler.m in Sources */,
 				AA3B668F1426C661004B1DE6 /* SGCTHelper.m in Sources */,
+				AAE31464148150D0004D2ACD /* SGCoreDataController.m in Sources */,
+				AAE31467148150D0004D2ACD /* SGCoreDataGrandCentralController.m in Sources */,
+				AAE3146C14815118004D2ACD /* RetryingHTTPOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
