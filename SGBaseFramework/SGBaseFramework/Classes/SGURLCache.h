@@ -46,12 +46,12 @@ extern NSString * const kSGCEtagCacheDirectoryName;
  * Setting this to zero will allow an unlimited number of images to be cached.  The default
  * is zero.
  */
-@property (nonatomic) NSUInteger maxPixelCount;
+//@property (nonatomic) NSUInteger maxPixelCount;
 
 /**
  * The amount of time to set back the modification timestamp on files when invalidating them.
  */
-@property (nonatomic) NSTimeInterval invalidationAge;
+//@property (nonatomic) NSTimeInterval invalidationAge;
 
 + (SGURLCache *)instance;
 
