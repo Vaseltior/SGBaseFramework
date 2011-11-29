@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/vaseltior/Library/Developer/Shared/Documentation/DocSets/com.vaseltior.SGBaseFramework.docset
+Time: 2011-11-29 04:00:32 +0000

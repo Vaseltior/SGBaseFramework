@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
+    <id>http://vaseltior.github.com/SGBaseFramework/sgbaseframeworkdocset.atom/20111129050032</id>
+    <title type="text">SGBaseFramework Documentation</title>
+    <rights>Copyright © 2011 Vaseltior. All rights reserved.</rights>
+    <link rel="self" href="http://vaseltior.github.com/SGBaseFramework/sgbaseframeworkdocset.atom"></link>
+    <docset:publisherName>Vaseltior</docset:publisherName>
+    <docset:publisherID>com.vaseltior.documentation</docset:publisherID>
+    <updated>2011-11-29T05:00:32+01:00</updated>
+    <entry>
+        <id>tag:vaseltior.github.com,2011-11-29:com.vaseltior.SGBaseFramework/0.8.0</id>
+        <title type="text">SGBaseFramework Documentation</title>
+        <updated>2011-11-29T05:00:32+01:00</updated>
+        <content type="text">SGBaseFramework Documentation (v0.8.0)</content>
+        <link rel="enclosure" type="application/octet-stream" href="http://vaseltior.github.com/SGBaseFramework/com.vaseltior.sgbaseframework.xar" length="159576"></link>
+        <docset:identifier>com.vaseltior.SGBaseFramework</docset:identifier>
+        <docset:version>0.8.0</docset:version>
+        <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
+    </entry>
+</feed>
