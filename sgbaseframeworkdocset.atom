@@ -1,17 +1,17 @@
 <?xml version="1.0" standalone="no"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
-    <id>http://jverkoey.github.com/nimbus/nimbusdocset.atom/20111129034917</id>
+    <id>http://vaseltior.github.com/SGBaseFramework/sgbaseframeworkdocset.atom/20111129034917</id>
     <title type="text">SGBaseFramework Documentation</title>
-    <link rel="self" href="http://jverkoey.github.com/nimbus/nimbusdocset.atom"></link>
+    <link rel="self" href="http://vaseltior.github.com/SGBaseFramework/sgbaseframeworkdocset.atom"></link>
     <docset:publisherName>Samuel Grau</docset:publisherName>
     <docset:publisherID>com.vaseltior.sgbaseframework</docset:publisherID>
     <updated>2011-11-29T03:49:17+01:00</updated>
     <entry>
-        <id>tag:jverkoey.github.com,2011-11-29:com.vaseltior.sgbaseframework/0.8.0</id>
+        <id>tag:vaseltior.github.com,2011-11-29:com.vaseltior.sgbaseframework/0.8.0</id>
         <title type="text">SGBaseFrameWork 0.8</title>
         <updated>2011-11-29T03:49:17+01:00</updated>
         <content type="text">SGBaseFrameWork 0.8 (v0.8.0)</content>
-        <link rel="enclosure" type="application/octet-stream" href="http://vaseltior.github.com/SGBaseFramework/docsets" length="591424"></link>
+        <link rel="enclosure" type="application/octet-stream" href="http://vaseltior.github.com/SGBaseFramework/com.vaseltior.sgbaseframework.0.8.0.xar" length="591424"></link>
         <docset:identifier>com.vaseltior.sgbaseframework</docset:identifier>
         <docset:version>0.8.0</docset:version>
     </entry>
