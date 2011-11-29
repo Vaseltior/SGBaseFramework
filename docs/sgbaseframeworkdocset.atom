@@ -1,0 +1,23 @@
+<feed xmlns="http://www.w3.org/2005/Atom"
+  xmlns:docset="http://developer.apple.com/rss/docset_extensions"
+  xml:lang="en">
+  <id>http://vaseltior.github.com/SGBaseFramework</id>
+  <title type="text">SGBaseFramework Documentation</title>
+  <updated>2011-10-24T12:00:00Z</updated>
+  <author>
+    <name>Samuel Grau</name>
+    <uri>http://vaseltior.github.com/SGBaseFramework</uri>
+  </author>
+  <rights>Copyright (c) 2011, Samuel Grau</rights>
+  <link rel="self" href="sgbaseframeworkdocset.atom" />
+  <entry>
+    <id>http://vaseltior.github.com/SGBaseFramework/docsets/com.vaseltior.sgbaseframework.0.8.0</id>
+    <title type="text">SGBaseFramework Documentation</title>
+    <summary type="text">Includes reference for SGBaseFramework</summary>
+    <updated>2011-10-24T12:00:00Z</updated>
+    <link rel="enclosure" type="application/octet-stream" href="/SGBaseFramework/docsets/com.vaseltior.sgbaseframework.0.8.0.xar" />
+    <docset:identifier>com.vaseltior.sgbaseframework</docset:identifier>
+    <docset:version>0.8.0</docset:version>
+    <docset:minimumXcodeVersion>3.0</docset:minimumXcodeVersion>
+  </entry>
+</feed>

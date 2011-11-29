@@ -3,9 +3,9 @@
 # Clean the existing docs.
 rm -rf output/
 rm -rf output-docset/
-rm -rf ../nimbusdocs/*.*
-rm -rf ../nimbusdocs/docsets/
-rm -rf ../nimbusdocs/Makefile
+rm -rf ../sgbfdocs/*.*
+rm -rf ../sgbfdocs/docsets/
+rm -rf ../sgbfdocs/Makefile
 
 
 ######################
@@ -13,7 +13,7 @@ rm -rf ../nimbusdocs/Makefile
 /Applications/Doxygen.app/Contents/Resources/doxygen Doxyfile > /dev/null
 
 # Move the docs to the nimbus docs folder.
-cp -r output/html/* ../nimbusdocs/
+cp -r output/html/* ../sgbfdocs/
 
 
 ######################
@@ -28,8 +28,8 @@ make > /dev/null
 $(xcode-select -print-path)/usr/bin/docsetutil package com.vaseltior.sgbaseframework.docset > /dev/null
 
 # Move the docs to the nimbus docs folder.
-mkdir -p ../../../nimbusdocs/docsets/
-mv com.vaseltior.sgbaseframework.xar ../../../nimbusdocs/docsets/com.vaseltior.sgbaseframework.$1.xar
+mkdir -p ../sgbfdocs/docsets/
+mv com.vaseltior.sgbaseframework.xar ../sgbfdocs/docsets/com.vaseltior.sgbaseframework.$1.xar
 
 cd ../../
-cp nimbusdocset.atom ../../nimbusdocs/
+cp sgbaseframeworkdocset.atom output-docset/sgbfdocs/
