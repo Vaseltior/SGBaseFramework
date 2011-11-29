@@ -25,7 +25,10 @@ cd output-docset/html
 make > /dev/null
 
 # Archive the docset
-$(xcode-select -print-path)/usr/bin/docsetutil package com.vaseltior.sgbaseframework.docset > /dev/null
+$(xcode-select -print-path)/usr/bin/docsetutil \
+package com.vaseltior.sgbaseframework.docset \
+-download-url http://vaseltior.github.com/SGBaseFramework/docsets \
+-atom ../../sgbaseframeworkdocset.atom > /dev/null
 
 # Move the docs to the nimbus docs folder.
 mkdir -p ../sgbfdocs/docsets/
