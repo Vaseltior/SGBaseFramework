@@ -9,6 +9,11 @@ build/
 *project.xcworkspace/
 *.xcuserdatad
 
+# Doxygen
+docs/output/
+docs/output-docset/
+
+
 # OSX Noise
 .DS_Store
 
