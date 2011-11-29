@@ -30,6 +30,9 @@ package com.vaseltior.sgbaseframework.docset \
 -download-url http://vaseltior.github.com/SGBaseFramework/docsets \
 -atom ../../sgbaseframeworkdocset.atom > /dev/null
 
+# Archive the docset
+$(xcode-select -print-path)/usr/bin/docsetutil help  > /dev/null
+
 # Move the docs to the nimbus docs folder.
 mkdir -p ../sgbfdocs/docsets/
 mv com.vaseltior.sgbaseframework.xar ../sgbfdocs/docsets/com.vaseltior.sgbaseframework.$1.xar

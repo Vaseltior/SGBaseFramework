@@ -964,6 +964,8 @@ GENERATE_DOCSET        = YES
 
 DOCSET_FEEDNAME        = "SGBaseFramework Documentation"
 
+DOCSET_FEED_URL         = "http://vaseltior.github.com/SGBaseFramework/sgbaseframeworkdocset.atom"
+
 # When GENERATE_DOCSET tag is set to YES, this tag specifies a string that 
 # should uniquely identify the documentation set bundle. This should be a 
 # reverse domain-name style string, e.g. com.mycompany.MyDocSet. Doxygen 
